@@ -23,6 +23,19 @@ public class RunAnalysis{
 	public String destFile;
 
 	/**
+     * Example of analysis
+     * @param args
+     * @throws IOException
+     */
+    public static void main(String[] args) throws IOException {
+        LocalThresholding thresholder = new LocalThresholding();
+        String srcFolder = "C:\\Users\\MMB\\Desktop\\Joseph Cai\\Neutrophil Motility Analysis";
+        String destFile = "C:\\Users\\MMB\\Desktop\\Joseph Cai\\Neutrophil Motility Analysis\\Temp.csv";
+        RunAnalysis ra = new RunAnalysis(thresholder, srcFolder, destFile, 5, 10);
+        ra.run();
+    }
+    
+	/**
 	 * Run analysis on folder
 	 * @param thresholder custom thresholder; leave null if you want default
 	 * @param srcFile folder that contains all the AVIs to be processed
@@ -38,18 +51,7 @@ public class RunAnalysis{
 		this.gap1 = gap1;
 		this.gap2 = gap2;
 	}
-	/**
-	 * Example of analysis
-	 * @param args
-	 * @throws IOException
-	 */
-	public static void main(String[] args) throws IOException {
-		LocalThresholding thresholder = new LocalThresholding();
-		String srcFolder = "C:\\Users\\MMB\\Desktop\\Joseph Cai\\Neutrophil Motility Analysis";
-		String destFile = "C:\\Users\\MMB\\Desktop\\Joseph Cai\\Neutrophil Motility Analysis\\Temp.csv";
-		RunAnalysis ra = new RunAnalysis(thresholder, srcFolder, destFile, 5, 10);
-		ra.run();
-	}
+
 
 	/**
 	 * Goes through all files and calculates motility index and writes it to a csv
