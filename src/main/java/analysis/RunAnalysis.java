@@ -67,7 +67,7 @@ public class RunAnalysis{
 			//thresholder.save(f.getAbsolutePath(),f.getParentFile().getParentFile().getName()+", "+f.getParentFile().getName()+", "+f.getName(), "C:\\Users\\MMB\\Desktop\\Joseph Cai\\Neutrophil Motility Analysis", 1);
 			double motility = motilityIndex(f.getAbsolutePath());
 			System.out.println(motility);
-			writer.write(f.getAbsolutePath()+motility+"\n");
+			writer.write(f.getAbsolutePath().substring(srcFile.length()+1).replace(File.separatorChar,',')+","+motility+"\n");
 		}
 		writer.close();
 	}
