@@ -15,7 +15,7 @@ import thresholding.LocalThresholding;
  * @author MMB
  */
 public class RunAnalysis{
-	public ImageStack stack;
+	private ImageStack stack;
 	public LocalThresholding thresholder;
 	public int gap1;
 	public int gap2;
@@ -29,8 +29,9 @@ public class RunAnalysis{
      */
     public static void main(String[] args) throws IOException {
         LocalThresholding thresholder = new LocalThresholding();
-        String srcFolder = "C:\\Users\\MMB\\Desktop\\Joseph Cai\\Neutrophil Motility Analysis";
-        String destFile = "C:\\Users\\MMB\\Desktop\\Joseph Cai\\Neutrophil Motility Analysis\\Temp.csv";
+        //LocalThresholding thresholder = new LocalThresholding(3, 5, 15, 0.1, 0.4);
+        String srcFolder = "C:\\Users\\Example\\Documents\\Neutrophil Motility Analysis";
+        String destFile = "C:\\Users\\Example\\Documents\\Neutrophil Motility Analysis\\Example.csv";
         RunAnalysis ra = new RunAnalysis(thresholder, srcFolder, destFile, 5, 10);
         ra.run();
     }
