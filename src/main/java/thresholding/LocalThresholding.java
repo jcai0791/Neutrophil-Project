@@ -119,6 +119,6 @@ public class LocalThresholding {
 		ImageStack stack = RunAnalysis.getImageStack(source);
 		ImagePlus image1 = (getThresholdedImage(new ImagePlus(fileName+" Thresholded", stack.getProcessor(slice).convertToByteProcessor())));
 		FileSaver fs = new FileSaver(image1);
-		fs.saveAsTiff(dest+File.pathSeparator+fileName+".tif");
+		fs.saveAsTiff(dest+File.separator+fileName+".tif");
 	}
 }
