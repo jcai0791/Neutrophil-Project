@@ -32,5 +32,36 @@
 			<artifactId>clijx_</artifactId>
 			<version>0.32.1.1</version>
 		</dependency>
+
+		<!-- The formats-bsd component adds support for open formats. -->
+		
+		<dependency>
+			<groupId>ome</groupId>
+			<artifactId>formats-gpl</artifactId>
+			<version>6.8.1</version>
+		</dependency>
+		<dependency>
+			<groupId>ome</groupId>
+			<artifactId>bioformats_package</artifactId>
+			<version>6.8.1</version>
+		</dependency>
+		<dependency>
+			<groupId>io.scif</groupId>
+			<artifactId>scifio</artifactId>
+			<version>0.43.0</version>
+		</dependency>
+		<dependency>
+			<groupId>io.scif</groupId>
+			<artifactId>scifio-bf-compat</artifactId>
+			<version>4.1.0</version>
+		</dependency>
+		<dependency>
+			<groupId>org.openmicroscopy</groupId>
+			<artifactId>ome-common</artifactId>
+			<version>6.0.7</version>
+		</dependency>
+
+
+
 	</dependencies>
 </project>
