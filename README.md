@@ -18,7 +18,9 @@ Run the analysis using:
 
     ra.run();
     
-The resulting csv will be saved to the `destFile` path.
+The resulting csv will be saved to the `destFile` path. 
+
+The explanation of these parameters can be found in the methods section of the paper.
 
 ### Getting Started
 
