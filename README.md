@@ -1,5 +1,5 @@
 ### Description
-Code for analyzing the motility of neutrophils. Details are included in PAPER.
+Code for analyzing the cell motility. Bright-field videos (.avi, 30X magnification, ～8 FPS, 10 s) were recorded on a Nikon Ti. The videos were analyzed using a customized code in Java. Details are included in PAPER.
 
 ### How to use
 Create a LocalThresholding object:
@@ -8,7 +8,7 @@ Create a LocalThresholding object:
 
 To change the parameters, use the other constructor:
 
-    LocalThresholding thresholder = new LocalThresholding(3, 5, 15, 0.1, 0.4);
+    LocalThresholding thresholder = new LocalThresholding(3, 15, 0.1, 0.4, 5);
 
 Create a RunAnalysis object with desired parameters:
 

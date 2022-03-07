@@ -42,12 +42,12 @@ public class LocalThresholding {
 	/**
 	 * Creates a thresholder with custom parameters
 	 * @param blurRadius radius of gaussian blur (default value 3)
-	 * @param despeckleRadius radius of median filter (default value 5)
 	 * @param thresholdRadius radius of Phansalkar threshold (default value 15)
 	 * @param thresholdParameter1 Phansalkar threshold k (default value 0.1)
 	 * @param thresholdParameter2 Phansalkar threshold r (default value 0.4)
+	 * @param despeckleRadius radius of median filter (default value 5)
 	 */
-	public LocalThresholding(int blurRadius, int despeckleRadius, int thresholdRadius, double thresholdParameter1, double thresholdParameter2) {
+	public LocalThresholding(int blurRadius, int thresholdRadius, double thresholdParameter1, double thresholdParameter2, int despeckleRadius) {
 		this();
 		this.blurRadius = blurRadius;
 		this.despeckleRadius = despeckleRadius;
