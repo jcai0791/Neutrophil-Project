@@ -2,7 +2,7 @@ package thresholding;
 
 import java.io.File;
 
-import analysis.RunAnalysis;
+import analysis.MotilityAnalysis;
 import ij.ImagePlus;
 import ij.ImageStack;
 import ij.io.FileSaver;
@@ -116,7 +116,7 @@ public class LocalThresholding {
 	 * @param slice index of slice to be saved
 	 */
 	public void save(String source, String dest, String fileName, int slice) {
-		ImageStack stack = RunAnalysis.getImageStack(source);
+		ImageStack stack = MotilityAnalysis.getImageStack(source);
 		ImagePlus image1 = (getThresholdedImage(new ImagePlus(fileName+" Thresholded", stack.getProcessor(slice).convertToByteProcessor())));
 		FileSaver fs = new FileSaver(image1);
 		fs.saveAsTiff(dest+File.separator+fileName+".tif");
