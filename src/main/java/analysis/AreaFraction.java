@@ -43,7 +43,11 @@ import loci.plugins.in.ImporterOptions;
 
 public class AreaFraction extends Component implements ActionListener {
 	public static String example = "C:\\Users\\MMB\\Desktop\\Joseph Cai\\TestData";
+	int channel = 1;
 	public boolean automatic = false;
+	
+	
+	
 	public boolean yesToAll = false;
 	public String chosenMethod;
 	public JFrame frame;
@@ -84,7 +88,7 @@ public class AreaFraction extends Component implements ActionListener {
 				fileName = name.substring(0,name.indexOf("-"));
 				int time = Integer.parseInt(timeString.substring(0,timeString.length()-1).trim());
 				if(timeString.toLowerCase().endsWith("d")) time*=24;
-				data.put(time, measurements(f.getAbsolutePath(), destFile, 1));
+				data.put(time, measurements(f.getAbsolutePath(), destFile, channel));
 			} catch(Exception e) {e.printStackTrace();}
 		}
 		FileWriter writer = new FileWriter(destFile+File.separator+fileName+".csv");
