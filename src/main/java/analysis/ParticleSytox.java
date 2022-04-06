@@ -18,6 +18,7 @@ import java.io.FileWriter;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.HashMap;
 import java.util.TreeMap;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
@@ -43,29 +44,29 @@ import loci.formats.FormatException;
 import loci.plugins.BF;
 import loci.plugins.in.ImporterOptions;
 
-public class Particles extends Component implements ActionListener {
-	public static String example = "C:\\Users\\MMB\\Desktop\\Joseph Cai\\TestData";
+public class ParticleSytox extends Component implements ActionListener {
+	public static String example = "D:\\Experiments\\2021-12-10 Under-oil Neutrophils R33 (EasySep-Prostate172+Pancreas692-N1 vs N2)\\PolarizationAnalysis";
 	public static String resultColumn = "Area";
 	public boolean automatic = true;
-	public boolean yesToAll = false;
-	public String chosenMethod;
-	public int[] series = {3, 3, 3};
+	public int[] series = {3,3,3,3,3,3};
+	int channel = 1;
 	
-	
-	public JFrame frame;
-	public ImageCanvas window;
-	public ImageCanvas window2;
-	public ImageCanvas original;
-	public JButton button;
-	public JButton button2;
-	public JButton yesButton;
-	public JButton yesButton2;
-	public ImagePlus[] imps;
-	public int count;
+	private boolean yesToAll = false;
+	private String chosenMethod;
+	private JFrame frame;
+	private ImageCanvas window;
+	private ImageCanvas window2;
+	private ImageCanvas original;
+	private JButton button;
+	private JButton button2;
+	private JButton yesButton;
+	private JButton yesButton2;
+	private ImagePlus[] imps;
+	private int count;
 
 	public String method = null;
 	public static void main(String[] args) throws FormatException, IOException {
-		Particles a = new Particles();
+		ParticleSytox a = new ParticleSytox();
 		a.run(example, example);
 		
 	}
@@ -82,15 +83,15 @@ public class Particles extends Component implements ActionListener {
 				fileName = name.substring(0,name.indexOf("-"));
 				int time = Integer.parseInt(timeString.substring(0,timeString.length()-1).trim());
 				if(timeString.toLowerCase().endsWith("d")) time*=24;
-				data.put(time, measurements(f.getAbsolutePath(), destFile, 1));
+				data.put(time, measurements(f.getAbsolutePath(), destFile, channel));
 			} catch(Exception e) {e.printStackTrace();}
 		}
-		FileWriter writer = new FileWriter(destFile+File.separator+fileName+" Particle "+resultColumn+".csv");
+		FileWriter writer = new FileWriter(destFile+File.separator+fileName+" Particle Channel "+channel+" "+resultColumn+".csv");
 		BufferedWriter out = new BufferedWriter(writer);
 		int maxLength = 0;
 		for(Integer time : data.keySet()) {
 			for(int series = 0; series<data.get(time).length; series++) {
-				out.write("Series "+series+" "+time+"h,");
+				out.write("Condition "+series+" "+time+"h,");
 				if(data.get(time)[series].size()>maxLength) maxLength = data.get(time)[series].size();
 			}
 		}
@@ -115,7 +116,7 @@ public class Particles extends Component implements ActionListener {
 	public ArrayList<String>[] measurements(String fileName, String destFile, int channel) throws IOException, FormatException{
 		//Create folder to store images
 		String name = new File(fileName).getName().replace(".nd2","");
-		File imageFolder = new File(destFile+File.separator+"Images"+File.separator+name);
+		File imageFolder = new File(destFile+File.separator+"Images Channel "+channel+File.separator+name);
 		if(!imageFolder.exists()) imageFolder.mkdirs();
 		
 		//Import nd2 files
@@ -136,8 +137,16 @@ public class Particles extends Component implements ActionListener {
 			return null;
 		}
 		
-		ArrayList<String>[] data = new ArrayList[numSeries];
-		for(int i = 0; i<numSeries; i++) data[i] = new ArrayList<String>();
+		ArrayList<String>[] data = new ArrayList[series.length];
+		for(int i = 0; i<data.length; i++) data[i] = new ArrayList<String>();
+		HashMap<Integer, Integer> conditionMap = new HashMap<Integer,Integer>();
+		int index = 0;
+		int[] seriesCopy = Arrays.copyOf(series, series.length);
+		for(int i = 0; i<numSeries; i++) {
+			conditionMap.put(i,index);
+			seriesCopy[index]--;
+			if(seriesCopy[index]==0) index++;
+		}
 		count = 1;
 		chosenMethod = null;
 		yesToAll = false;
@@ -153,21 +162,21 @@ public class Particles extends Component implements ActionListener {
 				if(!yesToAll) chosenMethod = display(channels[channel]);
 				if(chosenMethod.equals("Default")) {
 					double[] calculateResults = calculate(channels[channel].getProcessor(),0, imageFolder, series);
-					data[series].add("Default");
-					for(double d : calculateResults) data[series].add(""+d);
+					data[conditionMap.get(series)].add(0,"Default");
+					for(double d : calculateResults) data[conditionMap.get(series)].add(""+d);
 					save(process(channels[channel].getProcessor()), imageFolder.getAbsolutePath(), "Series "+series+" Thresholded");
 				}
 				else if (chosenMethod.equals("MaxEntropy")) {
 					double[] calculateResults = calculate(channels[channel].getProcessor(),1, imageFolder, series);
-					data[series].add("MaxEntropy");
-					for(double d : calculateResults) data[series].add(""+d);
+					data[conditionMap.get(series)].add(0,"MaxEntropy");
+					for(double d : calculateResults) data[conditionMap.get(series)].add(""+d);
 					save(process2(channels[channel].getProcessor()), imageFolder.getAbsolutePath(), "Series "+series+" Thresholded MaxEntropy");
 				}
 			}
 			else {
 				double[] calculateResults = calculate(channels[channel].getProcessor(),0, imageFolder, series); //Change the 0 to change the default threshold method
-				data[series].add("Default");
-				for(double d : calculateResults) data[series].add(""+d);
+				data[conditionMap.get(series)].add(0,"Default");
+				for(double d : calculateResults) data[conditionMap.get(series)].add(""+d);
 				save(process(channels[channel].getProcessor()), imageFolder.getAbsolutePath(), "Series "+series+" Thresholded");
 				//save(process2(channels[channel].getProcessor()), imageFolder.getAbsolutePath(), "Series "+series+" Thresholded MaxEntropy");
 			}
