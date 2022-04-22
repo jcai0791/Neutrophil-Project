@@ -1,14 +1,9 @@
 package analysis;
 
 import ij.process.ImageProcessor;
-import ij.plugin.filter.ParticleAnalyzer;
-
-import java.awt.BorderLayout;
 import java.awt.Component;
-import java.awt.Dimension;
 import java.awt.GridBagConstraints;
 import java.awt.GridBagLayout;
-import java.awt.GridLayout;
 import java.awt.Insets;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
@@ -16,8 +11,6 @@ import java.io.BufferedWriter;
 import java.io.File;
 import java.io.FileWriter;
 import java.io.IOException;
-import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.TreeMap;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
@@ -32,7 +25,6 @@ import org.apache.commons.io.FileUtils;
 
 import ij.ImagePlus;
 import ij.gui.ImageCanvas;
-import ij.gui.ImageWindow;
 import ij.io.FileSaver;
 import ij.plugin.ChannelSplitter;
 import ij.plugin.filter.BackgroundSubtracter;

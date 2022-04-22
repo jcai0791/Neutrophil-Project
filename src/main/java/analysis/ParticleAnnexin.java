@@ -40,10 +40,10 @@ import loci.plugins.BF;
 import loci.plugins.in.ImporterOptions;
 
 public class ParticleAnnexin extends Component implements ActionListener {
-	public static String example = "D:\\Experiments\\2021-12-09 Under-oil Neutrophils R32 (EasySep-Healthy (ID109-2)-N1 vs N2)\\PolarizationAnalysis";
+	public static String example = "D:\\Experiments\\2021-09-20 Under-oil Neutrophils R18 (EasySep-Renal590+Renal533-Sytox 1000x+Annexin V 5ul per 100ul)\\R18 Morphology Analysis";
 	public static String resultColumn = "Area";
 	public boolean automatic = false;
-	public int[] series = {3, 3, 3};
+	public int[] series = {3, 3, 3, 3};
 	int channel = 2;
 	
 	private boolean yesToAll = false;
@@ -161,11 +161,11 @@ public class ParticleAnnexin extends Component implements ActionListener {
 					for(double d : calculateResults) data[conditionMap.get(series)].add(""+d);
 					save(process(channels[channel].getProcessor()), imageFolder.getAbsolutePath(), "Series "+series+" Thresholded");
 				}
-				else if (chosenMethod.equals("MaxEntropy")) {
+				else if (chosenMethod.equals("Triangle")) {
 					double[] calculateResults = calculate(channels[channel].getProcessor(),1, imageFolder, series);
-					data[conditionMap.get(series)].add(0,"MaxEntropy");
+					data[conditionMap.get(series)].add(0,"Triangle");
 					for(double d : calculateResults) data[conditionMap.get(series)].add(""+d);
-					save(process2(channels[channel].getProcessor()), imageFolder.getAbsolutePath(), "Series "+series+" Thresholded MaxEntropy");
+					save(process2(channels[channel].getProcessor()), imageFolder.getAbsolutePath(), "Series "+series+" Thresholded Triangle");
 				}
 			}
 			else {
@@ -173,16 +173,16 @@ public class ParticleAnnexin extends Component implements ActionListener {
 				data[conditionMap.get(series)].add(0,"Default");
 				for(double d : calculateResults) data[conditionMap.get(series)].add(""+d);
 				save(process(channels[channel].getProcessor()), imageFolder.getAbsolutePath(), "Series "+series+" Thresholded");
-				//save(process2(channels[channel].getProcessor()), imageFolder.getAbsolutePath(), "Series "+series+" Thresholded MaxEntropy");
+				//save(process2(channels[channel].getProcessor()), imageFolder.getAbsolutePath(), "Series "+series+" Thresholded Triangle");
 			}
 
 		}
 		return data;
 	}
 	private String display(ImagePlus imp) { 
-		ContrastEnhancer contrast = new ContrastEnhancer();
+		//ContrastEnhancer contrast = new ContrastEnhancer();
 		ImagePlus clone = imp.duplicate();
-		contrast.stretchHistogram(clone, 0.3);
+		//contrast.stretchHistogram(clone, 0.3);
 		ImagePlus originalDisplay = new ImagePlus("Original", clone.getProcessor());
 		original = new ImageCanvas(originalDisplay);
 		original.setMagnification(600.0/originalDisplay.getWidth());
@@ -204,7 +204,7 @@ public class ParticleAnnexin extends Component implements ActionListener {
 		olabel.setSize(200,40);
 		JLabel label = new JLabel("Default");
 		label.setSize(200,40);
-		JLabel label2 = new JLabel("MaxEntropy");
+		JLabel label2 = new JLabel("Triangle");
 		label2.setSize(200,40);
 		button = new JButton("Choose This");
 		button.setSize(200,40);
@@ -293,7 +293,7 @@ public class ParticleAnnexin extends Component implements ActionListener {
 		ImageProcessor ret = (ImageProcessor) ip.convertToByteProcessor().clone();
 		BackgroundSubtracter bs = new BackgroundSubtracter();
 		bs.rollingBallBackground(ret, 50, false, false, false, true, false);
-		ret.setAutoThreshold("MaxEntropy dark");
+		ret.setAutoThreshold("Triangle dark");
 		ret.threshold((int) ret.getMinThreshold());
 		return ret;
 	}
@@ -331,14 +331,14 @@ public class ParticleAnnexin extends Component implements ActionListener {
 			method = "Default";
 		}
 		else if(e.getSource()==button2) {
-			method = "MaxEntropy";
+			method = "Triangle";
 		}
 		else if(e.getSource()==yesButton) {
 			method = "Default";
 			yesToAll = true;
 		}
 		else if(e.getSource()==yesButton2) {
-			method = "MaxEntropy";
+			method = "Triangle";
 			yesToAll = true;
 		}
 
