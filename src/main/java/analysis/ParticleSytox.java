@@ -67,6 +67,10 @@ public class ParticleSytox extends Component implements ActionListener {
 	private int count;
 
 	public String method = null;
+	/**
+	 * Main method calls run
+	 * @param args
+	 */
 	public static void main(String[] args) throws FormatException, IOException {
 		ParticleSytox a = new ParticleSytox();
 		JFileChooser fc = new JFileChooser();
@@ -81,12 +85,6 @@ public class ParticleSytox extends Component implements ActionListener {
 		else System.out.println("Invalid Folder");
 		
 	}
-	/**
-	 * Runs the script on a file
-	 * @param srcFile folder containing all nd2 files
-	 * @param destFile folder to save results in
-	 * @throws IOException
-	 */
 	public void run(String srcFile, String destFile) throws IOException {
 
 
@@ -129,15 +127,7 @@ public class ParticleSytox extends Component implements ActionListener {
 		out.close();
 
 	}
-	/**
-	 * 
-	 * @param fileName
-	 * @param destFile
-	 * @param channel
-	 * @return
-	 * @throws IOException
-	 * @throws FormatException
-	 */
+	
 	public ArrayList<String>[] measurements(String fileName, String destFile, int channel) throws IOException, FormatException{
 		//Create folder to store images
 		String name = new File(fileName).getName().replace(".nd2","");
@@ -209,6 +199,11 @@ public class ParticleSytox extends Component implements ActionListener {
 		}
 		return data;
 	}
+	/**
+	 * Displays the GUI
+	 * @param imp to be displayed
+	 * @return chosen method
+	 */
 	private String display(ImagePlus imp) { 
 		ImagePlus originalDisplay = new ImagePlus("Original", imp.getProcessor());
 		original = new ImageCanvas(originalDisplay);
@@ -299,6 +294,12 @@ public class ParticleSytox extends Component implements ActionListener {
 		frame.dispose();
 		return temp;
 	}
+	/**
+	 * Returns substring that matches regular expression
+	 * @param regex to match
+	 * @param s to search
+	 * @return substring
+	 */
 	private String patternMatcher(String regex, String s) {
 		Pattern pattern = Pattern.compile(regex);
 		Matcher matcher = pattern.matcher(s);
@@ -308,6 +309,11 @@ public class ParticleSytox extends Component implements ActionListener {
 		}
 		return match;
 	}
+	/**
+	 * Performs background subtraction and thresholding
+	 * @param ip image to process
+	 * @return processed image
+	 */
 	protected static ImageProcessor process(ImageProcessor ip) {
 		ImageProcessor ret = (ImageProcessor) ip.convertToByteProcessor().clone();
 		BackgroundSubtracter bs = new BackgroundSubtracter();
@@ -316,6 +322,11 @@ public class ParticleSytox extends Component implements ActionListener {
 		ret.threshold((int) ret.getMinThreshold());
 		return ret;
 	}
+	/**
+     * Performs background subtraction and thresholding
+     * @param ip image to process
+     * @return processed image
+     */
 	protected static ImageProcessor process2(ImageProcessor ip) {
 		ImageProcessor ret = (ImageProcessor) ip.convertToByteProcessor().clone();
 		BackgroundSubtracter bs = new BackgroundSubtracter();
@@ -324,11 +335,25 @@ public class ParticleSytox extends Component implements ActionListener {
 		ret.threshold((int) ret.getMinThreshold());
 		return ret;
 	}
+	/**
+	 * Saves image at a location
+	 * @param ip image to save
+	 * @param dest location of folder
+	 * @param fileName name of saved file
+	 */
 	private void save(ImageProcessor ip, String dest, String fileName) {
 		FileSaver fs = new FileSaver(new ImagePlus("Whatever", ip));
 		fs.saveAsTiff(dest+File.separator+fileName+".tif");
 		//Black and white instead of green
 	}
+	/**
+	 * Does Particle Analysis measurements on an image
+	 * @param ip image to measure
+	 * @param method either default (0) or maxEntropy (1)
+	 * @param imageFolder folder to save images in
+	 * @param series series number of image (affects output image name)
+	 * @return array of particle measurements
+	 */
 	private double[] calculate(ImageProcessor ip, int method, File imageFolder, int series) {
 		ImageProcessor thresholded;
 		if(method ==0) thresholded = process(ip);
@@ -343,7 +368,6 @@ public class ParticleSytox extends Component implements ActionListener {
 		outputImage.close();
 		return rt.getColumnAsDoubles(rt.getColumnIndex(resultColumn));
 	}
-
 	public void actionPerformed(ActionEvent e) {
 		if(e.getSource()==button) {
 			method = "Default";
