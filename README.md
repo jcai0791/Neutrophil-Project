@@ -7,7 +7,8 @@ First, download Eclipse IDE or another IDE or your choice. To download this proj
 Extract the downloaded zipped file somewhere.
 In Eclipse, go to File → Import → Maven → Existing Maven Projects.
 Choose the unzipped Code and check the Project. Finish the dialog.
-Now, there should be a `` project in the explorer.
+Now, there should be a `Neutrophil-Project` project in the explorer.
+There are several dependencies that may not automatically download. To resolve those errors, go to Eclipse preferences, Maven -> User Settings and change the path of the settings to the settings.xml file in the project. This will tell Eclipse to download the dependencies automatically from the Open Microscopy Artifactory.
 
 ### Motility Analysis
 
