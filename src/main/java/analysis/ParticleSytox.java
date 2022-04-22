@@ -45,11 +45,13 @@ import loci.plugins.BF;
 import loci.plugins.in.ImporterOptions;
 
 public class ParticleSytox extends Component implements ActionListener {
-	public static String example = "D:\\Experiments\\2021-12-10 Under-oil Neutrophils R33 (EasySep-Prostate172+Pancreas692-N1 vs N2)\\PolarizationAnalysis";
+	public static String example = "D:\\Experiments\\2021-08-10 Under-oil Neutrophils R12 (Prostate vs Healthy-EasySep&Polarization)\\Morphology Analysis";
 	public static String resultColumn = "Area";
-	public boolean automatic = true;
-	public int[] series = {3,3,3,3,3,3};
+	public boolean automatic = false;
+	public int[] series = {3,3,3,3};
+	public String[] seriesTitles = {"Condition 0", "Condition 1", "Condition 2", "Condition 3"};
 	int channel = 1;
+	public final double MICRONS_PER_PIXEL = 1.63;
 	
 	private boolean yesToAll = false;
 	private String chosenMethod;
@@ -71,15 +73,18 @@ public class ParticleSytox extends Component implements ActionListener {
 	 */
 	public static void main(String[] args) throws FormatException, IOException {
 		ParticleSytox a = new ParticleSytox();
-		a.run(example, example);
+		JFileChooser fc = new JFileChooser();
+		fc.setFileSelectionMode(JFileChooser.DIRECTORIES_ONLY);
+		fc.setCurrentDirectory(new File(System.getProperty("user.home")));
+		int result = fc.showOpenDialog(a);
+		if (result == JFileChooser.APPROVE_OPTION) {
+		    File selectedFile = fc.getSelectedFile();
+		    System.out.println("Selected file: " + selectedFile.getAbsolutePath());
+		    a.run(selectedFile.getAbsolutePath(), selectedFile.getAbsolutePath());
+		}
+		else System.out.println("Invalid Folder");
 		
 	}
-	/**
-	 * Runs the script
-	 * @param srcFile file containing nd2 files
-	 * @param destFile file to save images and results
-	 * @throws IOException
-	 */
 	public void run(String srcFile, String destFile) throws IOException {
 
 
@@ -122,15 +127,7 @@ public class ParticleSytox extends Component implements ActionListener {
 		out.close();
 
 	}
-	/**
-	 * Returns measurements for an nd2 file
-	 * @param fileName location of nd2 file
-	 * @param destFile where to save images
-	 * @param channel which channel of the nd2 files to process
-	 * @return array of list of particles
-	 * @throws IOException
-	 * @throws FormatException
-	 */
+	
 	public ArrayList<String>[] measurements(String fileName, String destFile, int channel) throws IOException, FormatException{
 		//Create folder to store images
 		String name = new File(fileName).getName().replace(".nd2","");
@@ -181,20 +178,20 @@ public class ParticleSytox extends Component implements ActionListener {
 				if(chosenMethod.equals("Default")) {
 					double[] calculateResults = calculate(channels[channel].getProcessor(),0, imageFolder, series);
 					data[conditionMap.get(series)].add(0,"Default");
-					for(double d : calculateResults) data[conditionMap.get(series)].add(""+d);
+					for(double d : calculateResults) data[conditionMap.get(series)].add(""+(d*(MICRONS_PER_PIXEL)*(MICRONS_PER_PIXEL))); //Convert to microns 4x (1.63 microns per pixel)
 					save(process(channels[channel].getProcessor()), imageFolder.getAbsolutePath(), "Series "+series+" Thresholded");
 				}
 				else if (chosenMethod.equals("MaxEntropy")) {
 					double[] calculateResults = calculate(channels[channel].getProcessor(),1, imageFolder, series);
 					data[conditionMap.get(series)].add(0,"MaxEntropy");
-					for(double d : calculateResults) data[conditionMap.get(series)].add(""+d);
+					for(double d : calculateResults) data[conditionMap.get(series)].add(""+(d*(MICRONS_PER_PIXEL)*(MICRONS_PER_PIXEL)));
 					save(process2(channels[channel].getProcessor()), imageFolder.getAbsolutePath(), "Series "+series+" Thresholded MaxEntropy");
 				}
 			}
 			else {
 				double[] calculateResults = calculate(channels[channel].getProcessor(),0, imageFolder, series); //Change the 0 to change the default threshold method
 				data[conditionMap.get(series)].add(0,"Default");
-				for(double d : calculateResults) data[conditionMap.get(series)].add(""+d);
+				for(double d : calculateResults) data[conditionMap.get(series)].add(""+(d*(MICRONS_PER_PIXEL)*(MICRONS_PER_PIXEL)));
 				save(process(channels[channel].getProcessor()), imageFolder.getAbsolutePath(), "Series "+series+" Thresholded");
 				//save(process2(channels[channel].getProcessor()), imageFolder.getAbsolutePath(), "Series "+series+" Thresholded MaxEntropy");
 			}
@@ -371,10 +368,6 @@ public class ParticleSytox extends Component implements ActionListener {
 		outputImage.close();
 		return rt.getColumnAsDoubles(rt.getColumnIndex(resultColumn));
 	}
-	
-	/**
-	 * Event handler for GUI
-	 */
 	public void actionPerformed(ActionEvent e) {
 		if(e.getSource()==button) {
 			method = "Default";
