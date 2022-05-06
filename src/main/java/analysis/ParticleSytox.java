@@ -106,7 +106,7 @@ public class ParticleSytox extends Component implements ActionListener {
 		int maxLength = 0;
 		for(Integer time : data.keySet()) {
 			for(int series = 0; series<data.get(time).length; series++) {
-				out.write("Condition "+series+" "+time+"h,");
+				out.write(seriesTitles[series]+" "+time+"h,");
 				if(data.get(time)[series].size()>maxLength) maxLength = data.get(time)[series].size();
 			}
 		}
@@ -344,7 +344,7 @@ public class ParticleSytox extends Component implements ActionListener {
 	private void save(ImageProcessor ip, String dest, String fileName) {
 		FileSaver fs = new FileSaver(new ImagePlus("Whatever", ip));
 		fs.saveAsTiff(dest+File.separator+fileName+".tif");
-		//Black and white instead of green
+		//TODO: Black and white instead of green
 	}
 	/**
 	 * Does Particle Analysis measurements on an image
