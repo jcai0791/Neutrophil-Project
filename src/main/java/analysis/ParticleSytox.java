@@ -67,6 +67,7 @@ public class ParticleSytox extends Component implements ActionListener {
 	private int count;
 
 	public String method = null;
+	
 	/**
 	 * Main method calls run
 	 * @param args
@@ -85,6 +86,13 @@ public class ParticleSytox extends Component implements ActionListener {
 		else System.out.println("Invalid Folder");
 		
 	}
+	
+	/**
+     * Runs analysis on folder
+     * @param srcFile folder containing all .nd2 files
+     * @param destFile where data and images are saved
+     * @throws IOException
+     */
 	public void run(String srcFile, String destFile) throws IOException {
 
 
@@ -128,6 +136,15 @@ public class ParticleSytox extends Component implements ActionListener {
 
 	}
 	
+	/**
+     * Loads images and saves measurements as computed by the calculate() method
+     * @param fileName location of .nd2 file
+     * @param destFile where to save processed images
+     * @param channel channel of image to process
+     * @return list of measurements for each series
+     * @throws IOException
+     * @throws FormatException
+     */
 	public ArrayList<String>[] measurements(String fileName, String destFile, int channel) throws IOException, FormatException{
 		//Create folder to store images
 		String name = new File(fileName).getName().replace(".nd2","");

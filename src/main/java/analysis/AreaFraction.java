@@ -54,6 +54,8 @@ public class AreaFraction extends Component implements ActionListener {
 	public int count;
 
 	public String method = null;
+	
+	
 	public static void main(String[] args) throws FormatException, IOException {
 		AreaFraction a = new AreaFraction();
 		JFileChooser fc = new JFileChooser();
@@ -67,6 +69,13 @@ public class AreaFraction extends Component implements ActionListener {
 		}
 		else System.out.println("Invalid Folder");
 	}
+	
+	/**
+     * Runs analysis on folder
+     * @param srcFile folder containing all .nd2 files
+     * @param destFile where data and images are saved
+     * @throws IOException
+     */
 	public void run(String srcFile, String destFile) throws IOException {
 
 
@@ -110,6 +119,15 @@ public class AreaFraction extends Component implements ActionListener {
 
 	}
 
+	/**
+     * Loads images and saves measurements as computed by the calculate() method
+     * @param fileName location of .nd2 file
+     * @param destFile where to save processed images
+     * @param channel channel of image to process
+     * @return measurement and method for each series
+     * @throws IOException
+     * @throws FormatException
+     */
 	public String[][] measurements(String fileName, String destFile, int channel) throws IOException, FormatException{
 		//Create folder to store images
 		String name = new File(fileName).getName().replace(".nd2","");
@@ -162,6 +180,12 @@ public class AreaFraction extends Component implements ActionListener {
 		}
 		return data;
 	}
+	
+	/**
+	 * Displays image with gui
+	 * @param imp image to be displayed
+	 * @return method chosen by user
+	 */
 	private String display(ImagePlus imp) { 
 		ImagePlus originalDisplay = new ImagePlus("Original", imp.getProcessor());
 		original = new ImageCanvas(originalDisplay);
@@ -252,6 +276,13 @@ public class AreaFraction extends Component implements ActionListener {
 		frame.dispose();
 		return temp;
 	}
+	
+	/**
+     * Find part of string that matches a regex
+     * @param regex to find
+     * @param s to match to
+     * @return group in s that matches regex
+     */
 	private String patternMatcher(String regex, String s) {
 		Pattern pattern = Pattern.compile(regex);
 		Matcher matcher = pattern.matcher(s);
@@ -261,6 +292,12 @@ public class AreaFraction extends Component implements ActionListener {
 		}
 		return match;
 	}
+	
+	/**
+	 * Subtracts background and thresholds image using default dark threshold
+	 * @param ip image to be processed
+	 * @return processed image
+	 */
 	protected static ImageProcessor process(ImageProcessor ip) {
 		ImageProcessor ret = (ImageProcessor) ip.convertToByteProcessor().clone();
 		BackgroundSubtracter bs = new BackgroundSubtracter();
@@ -269,6 +306,12 @@ public class AreaFraction extends Component implements ActionListener {
 		ret.threshold((int) ret.getMinThreshold());
 		return ret;
 	}
+	
+	/**
+     * Subtracts background and thresholds image using MaxEntropy dark threshold
+     * @param ip image to be processed
+     * @return processed image
+     */
 	protected static ImageProcessor process2(ImageProcessor ip) {
 		ImageProcessor ret = (ImageProcessor) ip.convertToByteProcessor().clone();
 		BackgroundSubtracter bs = new BackgroundSubtracter();
@@ -277,11 +320,25 @@ public class AreaFraction extends Component implements ActionListener {
 		ret.threshold((int) ret.getMinThreshold());
 		return ret;
 	}
+	
+	/**
+     * Saves an image to a destination
+     * @param ip image to save
+     * @param dest folder to save to
+     * @param fileName name of saved file
+     */
 	private void save(ImageProcessor ip, String dest, String fileName) {
 		FileSaver fs = new FileSaver(new ImagePlus("Whatever", ip));
 		fs.saveAsTiff(dest+File.separator+fileName+".tif");
 		//Black and white instead of green
 	}
+	
+	/**
+	 * thresholds image according to method and calculates area fraction
+	 * @param ip image to process
+	 * @param method to threshold by: 0 for default, 1 for maxEntropy
+	 * @return area fraction adjusted to well size in frame
+	 */
 	private double calculate(ImageProcessor ip, int method) {
 		ImageProcessor thresholded;
 		if(method ==0) thresholded = process(ip);
@@ -289,6 +346,12 @@ public class AreaFraction extends Component implements ActionListener {
 		double total = thresholded.getWidth()*thresholded.getHeight();
 		return sum(thresholded)/total/((2.4*2.4)/(3.34*3.33));
 	}
+	
+	/**
+	 * Sums all pixels in image
+	 * @param ip image to process
+	 * @return total luminosity
+	 */
 	private double sum(ImageProcessor ip) {
 		int[][] arr = ip.getIntArray();
 		double total = 0;
@@ -299,6 +362,10 @@ public class AreaFraction extends Component implements ActionListener {
 		}
 		return total;
 	}
+	
+	/**
+	 * Event handler for gui
+	 */
 	public void actionPerformed(ActionEvent e) {
 		if(e.getSource()==button) {
 			method = "Default";

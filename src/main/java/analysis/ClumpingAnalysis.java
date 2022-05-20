@@ -42,6 +42,9 @@ import loci.formats.FormatException;
 import loci.plugins.BF;
 import loci.plugins.in.ImporterOptions;
 
+/**
+ * Computes and saves a measure for the clumping in an .nd2 file
+ */
 public class ClumpingAnalysis{
 	public static String example = "C:\\Users\\MMB\\Desktop\\Joseph Cai\\TestData\\Test";
 	public static String resultColumn = "Area";
@@ -56,11 +59,19 @@ public class ClumpingAnalysis{
 	private int count;
 
 	public String method = null;
+	
+	
 	public static void main(String[] args) throws FormatException, IOException {
-
 		ClumpingAnalysis a = new ClumpingAnalysis();
 		a.run(example, example);
 	}
+	
+	/**
+	 * Runs analysis on folder
+	 * @param srcFile folder containing all .nd2 files
+	 * @param destFile where data and images are saved
+	 * @throws IOException
+	 */
 	public void run(String srcFile, String destFile) throws IOException {
 
 		for(int i = 0; i<gridSizes.length; i++) {
@@ -77,6 +88,8 @@ public class ClumpingAnalysis{
 				data.put(time, measurements(f.getAbsolutePath(), destFile, channel, gridSizes[i]));
 			} catch(Exception e) {e.printStackTrace();}
 		}
+		
+		//Write data
 		FileWriter writer = new FileWriter(destFile+File.separator+fileName+" Particle Channel "+channel+" "+resultColumn+" GridSize="+gridSizes[i]+".csv");
 		BufferedWriter out = new BufferedWriter(writer);
 		int maxLength = 0;
@@ -104,6 +117,16 @@ public class ClumpingAnalysis{
 		}
 	}
 
+	/**
+	 * Loads images and saves measurements as computed by the calculate() method
+	 * @param fileName location of .nd2 file
+	 * @param destFile where to save processed images
+	 * @param channel channel of image to process
+	 * @param gridSize in pixels
+	 * @return list of measurements for each series
+	 * @throws IOException
+	 * @throws FormatException
+	 */
 	public ArrayList<String>[] measurements(String fileName, String destFile, int channel, int gridSize) throws IOException, FormatException{
 		//Create folder to store images
 		String name = new File(fileName).getName().replace(".nd2","");
@@ -157,7 +180,13 @@ public class ClumpingAnalysis{
 		}
 		return data;
 	}
-
+	
+	/**
+	 * Find part of string that matches a regex
+	 * @param regex to find
+	 * @param s to match to
+	 * @return group in s that matches regex
+	 */
 	private String patternMatcher(String regex, String s) {
 		Pattern pattern = Pattern.compile(regex);
 		Matcher matcher = pattern.matcher(s);
@@ -167,6 +196,12 @@ public class ClumpingAnalysis{
 		}
 		return match;
 	}
+	
+	/**
+	 * Returns a cropped copy of the image
+	 * @param ip original image
+	 * @return cropped image
+	 */
 	protected static ImageProcessor process(ImageProcessor ip) {
 		ImageProcessor ret = (ImageProcessor) ip.convertToByteProcessor().clone();
 		ret.setRoi(crop);
@@ -176,11 +211,27 @@ public class ClumpingAnalysis{
 		new ImagePlus("",ret).show();
 		return ret.crop();
 	}
+	
+	/**
+	 * Saves an image to a destination
+	 * @param ip image to save
+	 * @param dest folder to save to
+	 * @param fileName name of saved file
+	 */
 	private void save(ImageProcessor ip, String dest, String fileName) {
 		FileSaver fs = new FileSaver(new ImagePlus("Whatever", ip));
 		fs.saveAsTiff(dest+File.separator+fileName+".tif");
 		//Black and white instead of green
-	}
+	} 
+	
+	/**
+	 * Splits image into a grid and finds average luminosity for each grid square
+	 * @param ip original image
+	 * @param imageFolder TODO remove - not used
+	 * @param series TODO remove - not used
+	 * @param gridSize grid size
+	 * @return average luminosity for each grid square
+	 */
 	private double[] calculate(ImageProcessor ip, File imageFolder, int series, int gridSize) {
 		ImageProcessor cropped = process(ip);
 		int[][] image = cropped.getIntArray();
