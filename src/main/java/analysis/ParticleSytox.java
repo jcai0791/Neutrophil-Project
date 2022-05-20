@@ -53,6 +53,7 @@ public class ParticleSytox extends Component implements ActionListener {
 	int channel = 1;
 	public final double MICRONS_PER_PIXEL = 1.63;
 	
+	//GUI
 	private boolean yesToAll = false;
 	private String chosenMethod;
 	private JFrame frame;

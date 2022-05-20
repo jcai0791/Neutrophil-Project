@@ -48,7 +48,6 @@ import loci.plugins.in.ImporterOptions;
 public class ClumpingAnalysis{
 	public static String example = "C:\\Users\\MMB\\Desktop\\Joseph Cai\\TestData\\Test";
 	public static String resultColumn = "Area";
-	public boolean automatic = false;
 	public int[] series = {3, 3, 3};
 	public String[] seriesTitles = {"N0", "N1", "N2"};
 	int channel = 1; //Sytox = 1
