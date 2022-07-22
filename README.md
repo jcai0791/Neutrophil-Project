@@ -55,7 +55,12 @@ Particle analysis uses the ImageJ particle analyzer to measure the areas of part
 `MICRONS_PER_PIXEL` is a multiplier to the final result to convert it from pixels to microns squared.
 
 #### How to use
-Set the variables as desired above, then run. A file chooser window will pop up. Select the folder containing all the nd2 files you want to process. Note that the script does a deep search for nd2 files, so make sure only the nd2 files you want to process are present in the folder and its subfolders.
+Set the variables as desired above, then run. A file chooser window will pop up. Select the folder containing all the nd2 files you want to process. You should have each timepoint in a separate nd2 file. The nd2 files must have the format "NAME1-123h.nd2" where the hour can be one to three digits. Note that the script does a deep search for nd2 files, so make sure only the nd2 files you want to process are present in the folder and its subfolders.
+
+### Area Fraction Analysis
+The output will be divided by 0.518 to normalize to the size of the well and multiplied by 100 to convert it to a percentage.
+
+#### How to use
 
 ### Clumping Analysis
 Clumping analysis uses a novel algorithm to determine how much clumping there is in an image. 
