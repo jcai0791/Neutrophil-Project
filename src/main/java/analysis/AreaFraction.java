@@ -11,8 +11,6 @@ import java.io.BufferedWriter;
 import java.io.File;
 import java.io.FileWriter;
 import java.io.IOException;
-import java.util.Arrays;
-import java.util.HashMap;
 import java.util.TreeMap;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
@@ -39,8 +37,7 @@ public class AreaFraction extends Component implements ActionListener {
 	public static String example = "C:\\Users\\MMB\\Desktop\\Joseph Cai\\TestData";
 	int channel = 1;
 	public boolean automatic = false;
-	public int[] series = {3, 3, 3};
-	public String[] seriesTitles = {"N0", "N1", "N2"};
+	
 	
 	
 	public boolean yesToAll = false;
@@ -148,23 +145,8 @@ public class AreaFraction extends Component implements ActionListener {
 		
 		//Prepare
 		int numSeries = imps.length;
-		int lengthSum = 0;
-		for(int i = 0; i<series.length; i++) lengthSum +=series[i];
-		if(numSeries!=lengthSum) {
-			System.out.println("Invalid Series Lengths");
-			return null;
-		}
-		String[][] data = new String[series.length][2];
-		HashMap<Integer, Integer> conditionMap = new HashMap<Integer,Integer>();
-		int index = 0;
-		int[] seriesCopy = Arrays.copyOf(series, series.length);
-		for(int i = 0; i<numSeries; i++) {
-			conditionMap.put(i,index);
-			seriesCopy[index]--;
-			if(seriesCopy[index]==0) index++;
-		}
+		String[][] data = new String[numSeries][2];
 		count = 1;
-		
 		chosenMethod = null;
 		yesToAll = false;
 		
@@ -178,19 +160,19 @@ public class AreaFraction extends Component implements ActionListener {
 			if(!automatic) {
 				if(!yesToAll) chosenMethod = display(channels[channel]);
 				if(chosenMethod.equals("Default")) {
-					data[conditionMap.get(series)][0] = ""+calculate(channels[channel].getProcessor(),0);
-					data[conditionMap.get(series)][1] = "Default";
+					data[series][0] = ""+calculate(channels[channel].getProcessor(),0);
+					data[series][1] = "Default";
 					save(process(channels[channel].getProcessor()), imageFolder.getAbsolutePath(), "Series "+series+" Thresholded");
 				}
 				else if (chosenMethod.equals("MaxEntropy")) {
-					data[conditionMap.get(series)][0] = ""+calculate(channels[channel].getProcessor(),1);
-					data[conditionMap.get(series)][1] = "MaxEntropy";
+					data[series][0] = ""+calculate(channels[channel].getProcessor(),1);
+					data[series][1] = "MaxEntropy";
 					save(process2(channels[channel].getProcessor()), imageFolder.getAbsolutePath(), "Series "+series+" Thresholded MaxEntropy");
 				}
 			}
 			else {
-				data[conditionMap.get(series)][0] = ""+calculate(channels[channel].getProcessor(),0);
-				data[conditionMap.get(series)][1] = "Default";
+				data[series][0] = ""+calculate(channels[channel].getProcessor(),0);
+				data[series][1] = "Default";
 				save(process(channels[channel].getProcessor()), imageFolder.getAbsolutePath(), "Series "+series+" Thresholded");
 				save(process2(channels[channel].getProcessor()), imageFolder.getAbsolutePath(), "Series "+series+" Thresholded MaxEntropy");
 			}
