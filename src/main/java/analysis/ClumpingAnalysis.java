@@ -22,6 +22,7 @@ import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 import javax.swing.JButton;
+import javax.swing.JFileChooser;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
@@ -46,7 +47,7 @@ import loci.plugins.in.ImporterOptions;
  * Computes and saves a measure for the clumping in an .nd2 file
  * Works with nd2 files containing all conditions at a single timepoint
  */
-public class ClumpingAnalysis{
+public class ClumpingAnalysis extends Component{
 	public static String example = "C:\\Users\\MMB\\Desktop\\Joseph Cai\\TestData\\Test";
 	public static String resultColumn = "Area";
 	public int[] series = {3, 3, 3};
@@ -64,6 +65,20 @@ public class ClumpingAnalysis{
 	public static void main(String[] args) throws FormatException, IOException {
 		ClumpingAnalysis a = new ClumpingAnalysis();
 		a.run(example, example);
+		
+		/**
+		JFileChooser fc = new JFileChooser();
+		fc.setFileSelectionMode(JFileChooser.DIRECTORIES_ONLY);
+		fc.setCurrentDirectory(new File(System.getProperty("user.home")));
+		int result = fc.showOpenDialog(a);
+		if (result == JFileChooser.APPROVE_OPTION) {
+		    File selectedFile = fc.getSelectedFile();
+		    System.out.println("Selected file: " + selectedFile.getAbsolutePath());
+		    a.run(selectedFile.getAbsolutePath(), selectedFile.getAbsolutePath());
+		}
+		else System.out.println("Invalid Folder");
+		*/
+		
 	}
 	
 	/**

@@ -74,6 +74,19 @@ public class CircularityAnalysis extends Component implements ActionListener {
 		
 		CircularityAnalysis a = new CircularityAnalysis();
 		a.run(example, example);
+		
+		/**
+		JFileChooser fc = new JFileChooser();
+		fc.setFileSelectionMode(JFileChooser.DIRECTORIES_ONLY);
+		fc.setCurrentDirectory(new File(System.getProperty("user.home")));
+		int result = fc.showOpenDialog(a);
+		if (result == JFileChooser.APPROVE_OPTION) {
+		    File selectedFile = fc.getSelectedFile();
+		    System.out.println("Selected file: " + selectedFile.getAbsolutePath());
+		    a.run(selectedFile.getAbsolutePath(), selectedFile.getAbsolutePath());
+		}
+		else System.out.println("Invalid Folder");
+		**/
 	}
 	public void run(String srcFile, String destFile) throws IOException {
 
