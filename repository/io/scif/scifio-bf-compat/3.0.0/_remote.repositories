@@ -1,0 +1,5 @@
+#NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
+#Mon Jan 03 11:12:33 CST 2022
+scifio-bf-compat-3.0.0.pom>scijava.public=
+scifio-bf-compat-3.0.0.jar>scijava.public=
+scifio-bf-compat-3.0.0-sources.jar>scijava.public=

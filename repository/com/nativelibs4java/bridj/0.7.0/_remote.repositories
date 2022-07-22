@@ -1,0 +1,8 @@
+#NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
+#Fri Feb 04 15:52:05 CST 2022
+bridj-0.7.0.jar>imagej.public=
+bridj-0.7.0.jar>scijava.public=
+bridj-0.7.0.pom>scijava.public=
+bridj-0.7.0-sources.jar>scijava.public=
+bridj-0.7.0-sources.jar>central=
+bridj-0.7.0.pom>imagej.public=

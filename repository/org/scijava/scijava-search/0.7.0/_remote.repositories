@@ -1,0 +1,7 @@
+#NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
+#Thu Jan 13 11:35:40 CST 2022
+scijava-search-0.7.0.pom>imagej.public=
+scijava-search-0.7.0.jar>imagej.public=
+scijava-search-0.7.0-sources.jar>imagej.public=
+scijava-search-0.7.0.jar>scijava.public=
+scijava-search-0.7.0.pom>scijava.public=

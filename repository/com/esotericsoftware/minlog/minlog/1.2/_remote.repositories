@@ -1,0 +1,7 @@
+#NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
+#Fri Feb 04 15:21:08 CST 2022
+minlog-1.2.jar>central=
+minlog-1.2.pom>central=
+minlog-1.2.jar>scijava.public=
+minlog-1.2-sources.jar>scijava.public=
+minlog-1.2.pom>scijava.public=

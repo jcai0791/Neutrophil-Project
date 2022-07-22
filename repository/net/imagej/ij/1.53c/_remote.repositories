@@ -1,0 +1,7 @@
+#NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
+#Tue Jan 18 14:21:13 CST 2022
+ij-1.53c.jar>central=
+ij-1.53c.pom>central=
+ij-1.53c.pom>imagej.public=
+ij-1.53c.jar>imagej.public=
+ij-1.53c-sources.jar>central=

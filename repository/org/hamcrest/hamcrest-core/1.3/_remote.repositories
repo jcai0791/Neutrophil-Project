@@ -1,0 +1,6 @@
+#NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
+#Mon Jan 03 11:14:23 CST 2022
+hamcrest-core-1.3.jar>central=
+hamcrest-core-1.3.pom>central=
+hamcrest-core-1.3-sources.jar>scijava.public=
+hamcrest-core-1.3.jar>scijava.public=

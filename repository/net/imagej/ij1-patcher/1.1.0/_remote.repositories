@@ -1,0 +1,5 @@
+#NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
+#Thu Jan 13 11:37:15 CST 2022
+ij1-patcher-1.1.0.pom>imagej.public=
+ij1-patcher-1.1.0.jar>imagej.public=
+ij1-patcher-1.1.0-sources.jar>imagej.public=

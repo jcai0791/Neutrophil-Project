@@ -1,0 +1,5 @@
+#NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
+#Mon Jan 03 11:11:43 CST 2022
+ij1-patcher-0.12.9-sources.jar>scijava.public=
+ij1-patcher-0.12.9.pom>scijava.public=
+ij1-patcher-0.12.9.jar>scijava.public=

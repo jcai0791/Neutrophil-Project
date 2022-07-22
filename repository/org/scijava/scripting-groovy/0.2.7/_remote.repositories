@@ -1,0 +1,5 @@
+#NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
+#Mon Jan 03 11:12:04 CST 2022
+scripting-groovy-0.2.7-sources.jar>scijava.public=
+scripting-groovy-0.2.7.pom>scijava.public=
+scripting-groovy-0.2.7.jar>scijava.public=

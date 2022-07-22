@@ -1,0 +1,5 @@
+#NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
+#Mon Jan 03 11:11:40 CST 2022
+javassist-3.24.0-GA.jar>scijava.public=
+javassist-3.24.0-GA.pom>scijava.public=
+javassist-3.24.0-GA-sources.jar>scijava.public=

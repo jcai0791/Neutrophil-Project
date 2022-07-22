@@ -1,0 +1,7 @@
+#NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
+#Fri Jan 21 13:30:07 CST 2022
+xml-apis-1.0.b2-sources.jar>scijava.public=
+xml-apis-1.0.b2.jar>scijava.public=
+xml-apis-1.0.b2.jar>central=
+xml-apis-1.0.b2.pom>scijava.public=
+xml-apis-1.0.b2.pom>central=

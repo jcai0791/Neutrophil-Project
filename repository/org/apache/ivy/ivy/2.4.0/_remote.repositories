@@ -1,0 +1,6 @@
+#NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
+#Fri Feb 04 15:52:00 CST 2022
+ivy-2.4.0-sources.jar>central=
+ivy-2.4.0.pom>imagej.public=
+ivy-2.4.0.jar>imagej.public=
+ivy-2.4.0-sources.jar>scijava.public=

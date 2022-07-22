@@ -1,0 +1,4 @@
+#NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
+#Mon Jan 03 11:07:58 CST 2022
+pull-parser-2.jar>scijava.public=
+pull-parser-2.pom>scijava.public=

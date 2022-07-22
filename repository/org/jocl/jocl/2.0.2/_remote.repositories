@@ -1,0 +1,8 @@
+#NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
+#Fri Feb 04 15:51:58 CST 2022
+jocl-2.0.2.pom>imagej.public=
+jocl-2.0.2.jar>imagej.public=
+jocl-2.0.2.jar>scijava.public=
+jocl-2.0.2.pom>scijava.public=
+jocl-2.0.2-sources.jar>central=
+jocl-2.0.2-sources.jar>scijava.public=

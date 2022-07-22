@@ -1,0 +1,6 @@
+#NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
+#Fri Feb 04 15:52:00 CST 2022
+groovy-2.4.8.jar>scijava.public=
+groovy-2.4.8.pom>scijava.public=
+groovy-2.4.8-sources.jar>central=
+groovy-2.4.8-sources.jar>scijava.public=

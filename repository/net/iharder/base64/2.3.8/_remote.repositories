@@ -1,0 +1,6 @@
+#NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
+#Fri Feb 04 15:51:59 CST 2022
+base64-2.3.8.jar>imagej.public=
+base64-2.3.8-sources.jar>scijava.public=
+base64-2.3.8-sources.jar>central=
+base64-2.3.8.pom>imagej.public=

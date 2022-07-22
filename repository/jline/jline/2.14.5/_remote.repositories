@@ -1,0 +1,5 @@
+#NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
+#Thu Jan 13 11:36:02 CST 2022
+jline-2.14.5.pom>imagej.public=
+jline-2.14.5-sources.jar>imagej.public=
+jline-2.14.5.jar>imagej.public=

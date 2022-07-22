@@ -1,0 +1,24 @@
+#NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
+#Thu Jan 13 11:35:40 CST 2022
+https\://maven.scijava.org/content/groups/public/.error=
+@default-mvnrepo-http\://mvnrepository.com/artifact/.lastUpdated=1642095336078
+http\://artifacts.openmicroscopy.org/artifactory/maven/.lastUpdated=1642095339828
+https\://maven.imagej.net/content/groups/public/.lastUpdated=1642095335664
+https\://repo.maven.apache.org/maven2/.lastUpdated=1641229911316
+https\://maven.imagej.net/content/groups/public/.error=
+https\://mvnrepository.com/artifact/org.jocl/jocl/.error=Could not transfer artifact edu.mines\:mines-jtk\:jar\:sources\:20151125 from/to jocl (https\://mvnrepository.com/artifact/org.jocl/jocl)\: Access denied to https\://mvnrepository.com/artifact/org.jocl/jocl/edu/mines/mines-jtk/20151125/mines-jtk-20151125-sources.jar. Error code 403, 
+https\://repo.maven.apache.org/maven2/.error=
+http\://maven.imagej.net/content/repositories/releases/.lastUpdated=1642095336142
+http\://oss.sonatype.org/content/groups/public/.error=
+https\://s01.oss.sonatype.org/service/local/repositories/releases/.error=Could not transfer artifact edu.mines\:mines-jtk\:jar\:sources\:20151125 from/to s01.oss (https\://s01.oss.sonatype.org/service/local/repositories/releases)\: Access denied to https\://s01.oss.sonatype.org/service/local/repositories/releases/edu/mines/mines-jtk/20151125/mines-jtk-20151125-sources.jar. Error code 401, 
+http\://maven.imagej.net/content/repositories/snapshots/.lastUpdated=1642095336206
+https\://maven.scijava.org/content/groups/public/.lastUpdated=1641229911175
+http\://oss.sonatype.org/content/groups/public/.lastUpdated=1642095336043
+https\://artifacts.unidata.ucar.edu/content/repositories/unidata-releases/.error=
+http\://artifacts.openmicroscopy.org/artifactory/maven/.error=
+https\://artifacts.unidata.ucar.edu/content/repositories/unidata-releases/.lastUpdated=1642095336455
+http\://maven.imagej.net/content/repositories/releases/.error=
+http\://maven.imagej.net/content/repositories/snapshots/.error=
+http\://mvnrepository.com/artifact/.error=Could not transfer artifact edu.mines\:mines-jtk\:jar\:sources\:20151125 from/to mvnrepo (http\://mvnrepository.com/artifact)\: Access denied to http\://mvnrepository.com/artifact/edu/mines/mines-jtk/20151125/mines-jtk-20151125-sources.jar. Error code 403, Forbidden
+@default-s01.oss-https\://s01.oss.sonatype.org/service/local/repositories/releases/.lastUpdated=1642095340131
+@default-jocl-https\://mvnrepository.com/artifact/org.jocl/jocl/.lastUpdated=1642095336283

@@ -1,0 +1,5 @@
+#NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
+#Mon Jan 03 11:12:33 CST 2022
+ome-codecs-0.2.3-sources.jar>scijava.public=
+ome-codecs-0.2.3.pom>scijava.public=
+ome-codecs-0.2.3.jar>scijava.public=

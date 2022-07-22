@@ -1,0 +1,5 @@
+#NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
+#Mon Jan 03 11:12:06 CST 2022
+jnr-constants-0.9.9.jar>imagej.public=
+jnr-constants-0.9.9.pom>imagej.public=
+jnr-constants-0.9.9-sources.jar>scijava.public=

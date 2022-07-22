@@ -1,0 +1,5 @@
+#NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
+#Thu Jan 13 11:36:01 CST 2022
+jnr-ffi-2.1.10.pom>imagej.public=
+jnr-ffi-2.1.10-sources.jar>imagej.public=
+jnr-ffi-2.1.10.jar>imagej.public=

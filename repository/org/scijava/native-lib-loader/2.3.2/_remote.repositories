@@ -1,0 +1,5 @@
+#NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
+#Mon Jan 03 11:12:39 CST 2022
+native-lib-loader-2.3.2.pom>scijava.public=
+native-lib-loader-2.3.2.jar>scijava.public=
+native-lib-loader-2.3.2-sources.jar>scijava.public=

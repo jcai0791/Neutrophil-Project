@@ -1,0 +1,5 @@
+#NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
+#Thu Jan 13 11:35:24 CST 2022
+jruby-stdlib-1.7.12.pom>central=
+jruby-stdlib-1.7.12-sources.jar>central=
+jruby-stdlib-1.7.12.jar>central=

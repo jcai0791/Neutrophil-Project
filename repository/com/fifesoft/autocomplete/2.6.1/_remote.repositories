@@ -1,0 +1,5 @@
+#NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
+#Mon Jan 03 11:11:40 CST 2022
+autocomplete-2.6.1-sources.jar>scijava.public=
+autocomplete-2.6.1.pom>scijava.public=
+autocomplete-2.6.1.jar>scijava.public=

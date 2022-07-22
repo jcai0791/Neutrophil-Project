@@ -1,0 +1,6 @@
+#NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
+#Fri Feb 04 15:52:05 CST 2022
+bounce-0.18-sources.jar>scijava.public=
+bounce-0.18-sources.jar>central=
+bounce-0.18.jar>scijava.public=
+bounce-0.18.pom>scijava.public=

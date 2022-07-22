@@ -1,0 +1,5 @@
+#NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
+#Mon Jan 03 11:13:12 CST 2022
+lapack-0.8.pom>imagej.public=
+lapack-0.8.jar>imagej.public=
+lapack-0.8-javadoc.jar>scijava.public=

@@ -1,0 +1,7 @@
+#NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
+#Tue Jan 18 14:21:14 CST 2022
+imagej-launcher-5.0.3-sources.jar>imagej.public=
+imagej-launcher-5.0.3.jar>scijava.public=
+imagej-launcher-5.0.3.pom>scijava.public=
+imagej-launcher-5.0.3.pom>imagej.public=
+imagej-launcher-5.0.3.jar>imagej.public=

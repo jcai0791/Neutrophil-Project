@@ -1,0 +1,6 @@
+#NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
+#Fri Feb 04 15:52:04 CST 2022
+scala-reflect-2.12.1-sources.jar>scijava.public=
+scala-reflect-2.12.1-sources.jar>central=
+scala-reflect-2.12.1.pom>imagej.public=
+scala-reflect-2.12.1.jar>imagej.public=

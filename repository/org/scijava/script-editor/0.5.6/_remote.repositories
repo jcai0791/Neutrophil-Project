@@ -1,0 +1,7 @@
+#NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
+#Thu Jan 13 11:37:15 CST 2022
+script-editor-0.5.6.pom>scijava.public=
+script-editor-0.5.6.jar>scijava.public=
+script-editor-0.5.6.pom>imagej.public=
+script-editor-0.5.6-sources.jar>imagej.public=
+script-editor-0.5.6.jar>imagej.public=

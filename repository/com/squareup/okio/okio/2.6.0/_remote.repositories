@@ -1,0 +1,7 @@
+#NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
+#Tue Jan 18 14:21:13 CST 2022
+okio-2.6.0.jar>central=
+okio-2.6.0.pom>central=
+okio-2.6.0.pom>imagej.public=
+okio-2.6.0-sources.jar>central=
+okio-2.6.0.jar>imagej.public=

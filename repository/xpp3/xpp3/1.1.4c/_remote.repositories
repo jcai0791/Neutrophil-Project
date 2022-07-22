@@ -1,0 +1,8 @@
+#NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
+#Fri Feb 04 15:52:05 CST 2022
+xpp3-1.1.4c.pom>central=
+xpp3-1.1.4c-sources.jar>scijava.public=
+xpp3-1.1.4c-sources.jar>central=
+xpp3-1.1.4c.jar>scijava.public=
+xpp3-1.1.4c.pom>scijava.public=
+xpp3-1.1.4c.jar>central=

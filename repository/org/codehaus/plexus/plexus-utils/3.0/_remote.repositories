@@ -1,0 +1,7 @@
+#NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
+#Fri Jan 21 13:30:04 CST 2022
+plexus-utils-3.0.jar>central=
+plexus-utils-3.0.pom>central=
+plexus-utils-3.0.pom>scijava.public=
+plexus-utils-3.0.jar>scijava.public=
+plexus-utils-3.0-sources.jar>scijava.public=

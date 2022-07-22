@@ -1,0 +1,7 @@
+#NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
+#Tue Jan 18 14:21:14 CST 2022
+imagej-updater-0.10.5.jar>imagej.public=
+imagej-updater-0.10.5-sources.jar>imagej.public=
+imagej-updater-0.10.5.pom>imagej.public=
+imagej-updater-0.10.5.jar>scijava.public=
+imagej-updater-0.10.5.pom>scijava.public=

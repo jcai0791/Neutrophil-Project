@@ -1,0 +1,6 @@
+#NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
+#Thu Jan 13 11:35:48 CST 2022
+imagej-deprecated-0.1.4.pom>imagej.public=
+imagej-deprecated-0.1.4.pom>scijava.public=
+imagej-deprecated-0.1.4.jar>imagej.public=
+imagej-deprecated-0.1.4-sources.jar>imagej.public=

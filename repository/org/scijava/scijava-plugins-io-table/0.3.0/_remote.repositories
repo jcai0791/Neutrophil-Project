@@ -1,0 +1,5 @@
+#NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
+#Thu Jan 13 11:37:09 CST 2022
+scijava-plugins-io-table-0.3.0.pom>imagej.public=
+scijava-plugins-io-table-0.3.0.jar>imagej.public=
+scijava-plugins-io-table-0.3.0-sources.jar>imagej.public=

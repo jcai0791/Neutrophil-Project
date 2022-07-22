@@ -1,0 +1,8 @@
+#NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
+#Fri Feb 04 15:51:56 CST 2022
+jna-4.5.2-sources.jar>central=
+jna-4.5.2.pom>imagej.public=
+jna-4.5.2.jar>scijava.public=
+jna-4.5.2.jar>imagej.public=
+jna-4.5.2.pom>scijava.public=
+jna-4.5.2-sources.jar>scijava.public=

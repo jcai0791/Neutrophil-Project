@@ -1,0 +1,8 @@
+#NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
+#Fri Feb 04 15:52:04 CST 2022
+jfreechart-1.5.0.pom>central=
+jfreechart-1.5.0.pom>imagej.public=
+jfreechart-1.5.0.jar>imagej.public=
+jfreechart-1.5.0.jar>scijava.public=
+jfreechart-1.5.0-sources.jar>central=
+jfreechart-1.5.0-sources.jar>scijava.public=

@@ -1,0 +1,5 @@
+#NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
+#Mon Jan 03 11:11:55 CST 2022
+batik-constants-1.10-sources.jar>scijava.public=
+batik-constants-1.10.pom>scijava.public=
+batik-constants-1.10.jar>scijava.public=

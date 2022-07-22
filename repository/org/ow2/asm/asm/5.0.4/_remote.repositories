@@ -1,0 +1,7 @@
+#NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
+#Fri Feb 04 15:52:06 CST 2022
+asm-5.0.4.jar>central=
+asm-5.0.4-sources.jar>central=
+asm-5.0.4.pom>imagej.public=
+asm-5.0.4.jar>scijava.public=
+asm-5.0.4-sources.jar>scijava.public=

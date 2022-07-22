@@ -1,0 +1,5 @@
+#NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
+#Mon Jan 03 11:12:06 CST 2022
+jnr-unixsocket-0.17-sources.jar>scijava.public=
+jnr-unixsocket-0.17.pom>imagej.public=
+jnr-unixsocket-0.17.jar>imagej.public=

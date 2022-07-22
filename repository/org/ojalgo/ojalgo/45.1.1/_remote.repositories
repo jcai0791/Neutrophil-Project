@@ -1,0 +1,8 @@
+#NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
+#Fri Feb 04 15:51:57 CST 2022
+ojalgo-45.1.1.pom>imagej.public=
+ojalgo-45.1.1-sources.jar>central=
+ojalgo-45.1.1.jar>imagej.public=
+ojalgo-45.1.1.jar>scijava.public=
+ojalgo-45.1.1.pom>scijava.public=
+ojalgo-45.1.1-sources.jar>scijava.public=

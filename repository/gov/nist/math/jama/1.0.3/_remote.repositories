@@ -1,0 +1,9 @@
+#NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
+#Fri Feb 04 15:51:57 CST 2022
+jama-1.0.3.pom>imagej.public=
+jama-1.0.3.jar>central=
+jama-1.0.3.jar>imagej.public=
+jama-1.0.3.pom>central=
+jama-1.0.3.jar>scijava.public=
+jama-1.0.3-sources.jar>central=
+jama-1.0.3-sources.jar>scijava.public=

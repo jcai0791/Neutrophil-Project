@@ -1,0 +1,24 @@
+#NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
+#Thu Jan 13 11:36:32 CST 2022
+https\://maven.scijava.org/content/groups/public/.error=
+@default-mvnrepo-http\://mvnrepository.com/artifact/.lastUpdated=1642095389016
+http\://artifacts.openmicroscopy.org/artifactory/maven/.lastUpdated=1642095392531
+https\://maven.imagej.net/content/groups/public/.lastUpdated=1642095388610
+https\://repo.maven.apache.org/maven2/.lastUpdated=1641229936449
+https\://maven.imagej.net/content/groups/public/.error=
+https\://mvnrepository.com/artifact/org.jocl/jocl/.error=Could not transfer artifact org.netlib\:blas\:jar\:sources\:0.8 from/to jocl (https\://mvnrepository.com/artifact/org.jocl/jocl)\: Access denied to https\://mvnrepository.com/artifact/org.jocl/jocl/org/netlib/blas/0.8/blas-0.8-sources.jar. Error code 403, 
+https\://repo.maven.apache.org/maven2/.error=
+http\://maven.imagej.net/content/repositories/releases/.lastUpdated=1642095389110
+http\://oss.sonatype.org/content/groups/public/.error=
+https\://s01.oss.sonatype.org/service/local/repositories/releases/.error=Could not transfer artifact org.netlib\:blas\:jar\:sources\:0.8 from/to s01.oss (https\://s01.oss.sonatype.org/service/local/repositories/releases)\: Access denied to https\://s01.oss.sonatype.org/service/local/repositories/releases/org/netlib/blas/0.8/blas-0.8-sources.jar. Error code 401, 
+http\://maven.imagej.net/content/repositories/snapshots/.lastUpdated=1642095389173
+https\://maven.scijava.org/content/groups/public/.lastUpdated=1641229936402
+http\://oss.sonatype.org/content/groups/public/.lastUpdated=1642095388985
+https\://artifacts.unidata.ucar.edu/content/repositories/unidata-releases/.error=
+http\://artifacts.openmicroscopy.org/artifactory/maven/.error=
+https\://artifacts.unidata.ucar.edu/content/repositories/unidata-releases/.lastUpdated=1642095389391
+http\://maven.imagej.net/content/repositories/releases/.error=
+http\://maven.imagej.net/content/repositories/snapshots/.error=
+http\://mvnrepository.com/artifact/.error=Could not transfer artifact org.netlib\:blas\:jar\:sources\:0.8 from/to mvnrepo (http\://mvnrepository.com/artifact)\: Access denied to http\://mvnrepository.com/artifact/org/netlib/blas/0.8/blas-0.8-sources.jar. Error code 403, Forbidden
+@default-s01.oss-https\://s01.oss.sonatype.org/service/local/repositories/releases/.lastUpdated=1642095392766
+@default-jocl-https\://mvnrepository.com/artifact/org.jocl/jocl/.lastUpdated=1642095389220

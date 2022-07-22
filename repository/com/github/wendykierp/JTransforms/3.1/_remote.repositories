@@ -1,0 +1,5 @@
+#NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
+#Mon Jan 03 11:11:45 CST 2022
+JTransforms-3.1-with-dependencies.jar>scijava.public=
+JTransforms-3.1-sources.jar>scijava.public=
+JTransforms-3.1.pom>scijava.public=

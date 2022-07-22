@@ -1,0 +1,5 @@
+#NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
+#Thu Jan 13 11:35:20 CST 2022
+jcl-over-slf4j-1.7.25-sources.jar>central=
+jcl-over-slf4j-1.7.25.jar>central=
+jcl-over-slf4j-1.7.25.pom>central=

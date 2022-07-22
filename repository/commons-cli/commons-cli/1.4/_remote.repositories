@@ -1,0 +1,5 @@
+#NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
+#Mon Jan 03 11:13:33 CST 2022
+commons-cli-1.4-sources.jar>scijava.public=
+commons-cli-1.4.pom>scijava.public=
+commons-cli-1.4.jar>scijava.public=

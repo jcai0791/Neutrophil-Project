@@ -1,0 +1,5 @@
+#NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
+#Mon Jan 03 11:12:49 CST 2022
+jxmapviewer2-1.3.1.pom>scijava.public=
+jxmapviewer2-1.3.1.jar>scijava.public=
+jxmapviewer2-1.3.1-sources.jar>scijava.public=

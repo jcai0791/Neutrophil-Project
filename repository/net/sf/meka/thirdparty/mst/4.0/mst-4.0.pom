@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+
+  <modelVersion>4.0.0</modelVersion>
+
+  <groupId>net.sf.meka.thirdparty</groupId>
+  <artifactId>mst</artifactId>
+  <version>4.0</version>
+  <packaging>jar</packaging>
+
+  <name>mst</name>
+  <description>Minimum spanning tree. Algorithms, 4th Edition by Robert Sedgewick and Kevin Wayne.</description>
+  <url>http://algs4.cs.princeton.edu/code/</url>
+
+  <licenses>
+    <license>
+      <name>GNU General Public License 3</name>
+      <url>http://www.gnu.org/licenses/gpl-3.0.txt</url>
+    </license>
+  </licenses>
+
+  <developers>
+    <developer>
+      <id>rsedgewick</id>
+      <name>Robert Sedgewick</name>
+    </developer>
+    <developer>
+      <id>kwayne</id>
+      <name>Kevin Wayne</name>
+    </developer>
+  </developers>
+
+  <scm>
+    <connection>not available</connection>
+    <url>http://algs4.cs.princeton.edu/code/</url>
+  </scm>
+</project>

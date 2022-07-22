@@ -1,0 +1,7 @@
+#NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
+#Tue Jan 18 14:21:14 CST 2022
+imagej-mesh-io-0.1.2.pom>imagej.public=
+imagej-mesh-io-0.1.2.jar>scijava.public=
+imagej-mesh-io-0.1.2.pom>scijava.public=
+imagej-mesh-io-0.1.2.jar>imagej.public=
+imagej-mesh-io-0.1.2-sources.jar>imagej.public=

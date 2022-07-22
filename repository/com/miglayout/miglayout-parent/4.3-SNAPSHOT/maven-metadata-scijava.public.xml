@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metadata modelVersion="1.1.0">
+  <groupId>com.miglayout</groupId>
+  <artifactId>miglayout-parent</artifactId>
+  <version>4.3-SNAPSHOT</version>
+  <versioning>
+    <snapshot>
+      <timestamp>20121116.151601</timestamp>
+      <buildNumber>4</buildNumber>
+    </snapshot>
+    <lastUpdated>20121116151601</lastUpdated>
+    <snapshotVersions>
+      <snapshotVersion>
+        <extension>pom</extension>
+        <value>4.3-20121116.151601-4</value>
+        <updated>20121116151601</updated>
+      </snapshotVersion>
+    </snapshotVersions>
+  </versioning>
+</metadata>

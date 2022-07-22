@@ -1,0 +1,5 @@
+#NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
+#Mon Jan 03 11:13:27 CST 2022
+processoutput4j-0.0.7-sources.jar>scijava.public=
+processoutput4j-0.0.7.pom>scijava.public=
+processoutput4j-0.0.7.jar>scijava.public=

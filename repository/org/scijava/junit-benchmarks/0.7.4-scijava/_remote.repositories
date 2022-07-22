@@ -1,0 +1,8 @@
+#NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
+#Thu Jan 13 11:37:39 CST 2022
+junit-benchmarks-0.7.4-scijava-sources.jar>imagej.public=
+junit-benchmarks-0.7.4-scijava.pom>imagej.public=
+junit-benchmarks-0.7.4-scijava.jar>imagej.public=
+junit-benchmarks-0.7.4-scijava-sources.jar>scijava.public=
+junit-benchmarks-0.7.4-scijava.jar>scijava.public=
+junit-benchmarks-0.7.4-scijava.pom>scijava.public=

@@ -1,0 +1,8 @@
+#NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
+#Fri Feb 04 15:51:58 CST 2022
+ejml-0.24.pom>central=
+ejml-0.24.jar>imagej.public=
+ejml-0.24.pom>imagej.public=
+ejml-0.24-sources.jar>central=
+ejml-0.24-sources.jar>scijava.public=
+ejml-0.24.jar>central=

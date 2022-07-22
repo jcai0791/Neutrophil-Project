@@ -1,0 +1,6 @@
+#NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
+#Fri Feb 04 15:52:01 CST 2022
+commons-math-2.2-sources.jar>central=
+commons-math-2.2.pom>imagej.public=
+commons-math-2.2.jar>imagej.public=
+commons-math-2.2-sources.jar>scijava.public=

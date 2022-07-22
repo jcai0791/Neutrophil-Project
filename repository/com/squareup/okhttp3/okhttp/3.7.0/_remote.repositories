@@ -1,0 +1,8 @@
+#NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
+#Fri Feb 04 15:52:05 CST 2022
+okhttp-3.7.0.pom>central=
+okhttp-3.7.0-sources.jar>central=
+okhttp-3.7.0.jar>scijava.public=
+okhttp-3.7.0.pom>scijava.public=
+okhttp-3.7.0-sources.jar>scijava.public=
+okhttp-3.7.0.jar>central=

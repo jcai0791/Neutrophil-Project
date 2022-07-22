@@ -1,0 +1,7 @@
+#NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
+#Thu Jan 13 11:35:05 CST 2022
+udunits-4.3.18.jar>scijava.public=
+udunits-4.3.18.pom>scijava.public=
+udunits-4.3.18.pom>imagej.public=
+udunits-4.3.18-sources.jar>scijava.public=
+udunits-4.3.18.jar>imagej.public=

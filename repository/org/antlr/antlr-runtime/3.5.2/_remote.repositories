@@ -1,0 +1,5 @@
+#NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
+#Thu Jan 13 11:35:59 CST 2022
+antlr-runtime-3.5.2-sources.jar>imagej.public=
+antlr-runtime-3.5.2.pom>imagej.public=
+antlr-runtime-3.5.2.jar>imagej.public=

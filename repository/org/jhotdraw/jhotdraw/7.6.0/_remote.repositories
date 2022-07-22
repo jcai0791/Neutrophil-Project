@@ -1,0 +1,6 @@
+#NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
+#Tue Jan 18 14:21:14 CST 2022
+jhotdraw-7.6.0.pom>imagej.public=
+jhotdraw-7.6.0.jar>imagej.public=
+jhotdraw-7.6.0.jar>scijava.public=
+jhotdraw-7.6.0.pom>scijava.public=

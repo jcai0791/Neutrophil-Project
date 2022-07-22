@@ -1,0 +1,5 @@
+#NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
+#Thu Jan 13 11:36:03 CST 2022
+ant-launcher-1.9.7.pom>imagej.public=
+ant-launcher-1.9.7-sources.jar>imagej.public=
+ant-launcher-1.9.7.jar>imagej.public=

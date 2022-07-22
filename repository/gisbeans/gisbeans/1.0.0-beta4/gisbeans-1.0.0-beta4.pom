@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+/*
+ * Copyright 2001-2004 The Apache Software Foundation.
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *      http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+ -->
+<project xmlns="http://maven.apache.org/POM/4.0.0" 
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+    xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <!-- the name of the group -->
+    <groupId>gisbeans</groupId>
+    <artifactId>gisbeans</artifactId>
+    <packaging>jar</packaging>
+    <version>1.0.0-beta4</version>
+    <name>gisbeans</name>
+    <!-- details about the organization that 'owns' the project -->
+    <organization>
+        <name>Delft University of Technology, the Netherlands</name>
+        <url>http://www.tudelft.nl</url>
+    </organization>
+    <!-- the year the project started -->
+    <inceptionYear>2002</inceptionYear>
+    <description> The gisbeans library for the DSOL suite contains a number of mathematical and statistical 
+        classes</description>
+    <!-- the project home page -->
+    <url>http://www.simulation.tudelft.nl/dsol/gisbeans/</url>
+    <issueTrackingUrl>http://sourceforge.net/tracker/?group_id=77699</issueTrackingUrl>
+
+
+   <repositories>
+        <repository>
+            <id>simulation.tudelft.nl</id>
+            <url>http://www.simulation.tudelft.nl/maven</url>
+        </repository>
+        <repository>
+            <id>http://www.ibiblio.org/maven2</id>
+            <url>http://www.ibiblio.org/maven2</url>
+        </repository>
+    </repositories>
+    <distributionManagement>
+        <!-- use the following if you're not using a snapshot version. -->
+        <repository>
+            <id>R1</id>
+            <name>simulation.tudelft.nl</name>
+            <url> 
+                scp://sk.tbm.tudelft.nl/home/web/simulation.tudelft.nl/html/maven</url>
+        </repository>
+        <!-- use the following if you ARE using a snapshot version. -->
+        <snapshotRepository>
+            <id>R1</id>
+            <name>simulation.tudelft.nl</name>
+            <url> 
+                scp://sk.tbm.tudelft.nl/home/web/simulation.tudelft.nl/html/maven</url>
+        </snapshotRepository>
+        <site>
+            <id>R1</id>
+            <name>sk.tbm.tudelft.nl/naming</name>
+            <url>
+                scp://sk.tbm.tudelft.nl/home/web/simulation.tudelft.nl/html/dsol/gisbeans</url>
+        </site>
+    </distributionManagement>
+    <!-- any mailing lists for the project -->
+    <mailingLists/>
+    <!-- who the developers are for the project -->
+    <developers>
+        <developer>
+            <name>Peter H.M. Jacobs</name>
+            <id>PeterJacobs</id>
+            <email>p.h.m.jacobs@tbm.tudelft.nl</email>
+            <organization>Delft University of Technology, the Netherlands</organization>
+            <url>http://www.tbm.tudelft.nl/webstaf/peterja</url>
+            <timezone>1</timezone>
+        </developer>
+        <developer>
+            <name>Paul Jacobs</name>
+            <id>PaulJacobs</id>
+            <email>paul.jacobs@tomtom.com</email>
+            <organization>Javel b.v., the Netherlands</organization>
+            <timezone>1</timezone>
+        </developer>
+    </developers>
+    <!-- licenses -->
+    <licenses>
+        <license>
+            <name>GNU Lesser General Public License</name>
+            <url>http://www.gnu.org/copyleft/lesser.html</url>
+            <distribution>repo</distribution>
+        </license>
+    </licenses>
+    <!-- jar files the project is dependent on -->
+    <dependencies>
+          <dependency>
+            <groupId>dsol</groupId>
+            <artifactId>language</artifactId>
+            <version>1.6.6</version>
+            <scope>compile</scope>
+        </dependency>
+   
+   <dependency>
+            <groupId>sax</groupId>
+            <artifactId>sax</artifactId>
+            <version>2.0.1</version>
+            <scope>compile</scope>
+        </dependency>
+        <dependency>
+            <groupId>xerces</groupId>
+            <artifactId>xercesImpl</artifactId>
+            <version>2.6.1</version>
+            <scope>compile</scope>
+        </dependency>
+      <dependency>
+            <groupId>xerces</groupId>
+            <artifactId>xerces</artifactId>
+            <version>2.4.0</version>
+            <scope>compile</scope>
+        </dependency>
+         <dependency>
+            <groupId>xml-apis</groupId>
+            <artifactId>xml-apis</artifactId>
+            <version>2.0.2</version>
+            <scope>compile</scope>
+        </dependency>
+     <dependency>
+            <groupId>jdom</groupId>
+            <artifactId>jdom</artifactId>
+            <version>1.0</version>
+            <scope>compile</scope>
+        </dependency>
+       </dependencies>
+    <!-- build information for the project -->
+    <build>
+        <sourceDirectory>src/java</sourceDirectory>
+        <testSourceDirectory>src/test</testSourceDirectory>
+        <resources>
+            <resource>
+                <directory>src/conf</directory>
+                <includes>
+                    <include>*.properties</include>
+			  <include>*.xsd</include>
+                </includes>
+            </resource>
+        </resources>
+    </build>
+</project>

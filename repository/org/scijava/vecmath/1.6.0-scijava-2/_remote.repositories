@@ -1,0 +1,8 @@
+#NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
+#Fri Feb 04 15:51:58 CST 2022
+vecmath-1.6.0-scijava-2.pom>imagej.public=
+vecmath-1.6.0-scijava-2.jar>central=
+vecmath-1.6.0-scijava-2.jar>imagej.public=
+vecmath-1.6.0-scijava-2-sources.jar>central=
+vecmath-1.6.0-scijava-2-sources.jar>scijava.public=
+vecmath-1.6.0-scijava-2.pom>scijava.public=

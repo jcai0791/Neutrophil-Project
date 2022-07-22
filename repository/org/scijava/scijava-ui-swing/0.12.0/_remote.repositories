@@ -1,0 +1,5 @@
+#NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
+#Mon Jan 03 11:12:53 CST 2022
+scijava-ui-swing-0.12.0-sources.jar>scijava.public=
+scijava-ui-swing-0.12.0.pom>scijava.public=
+scijava-ui-swing-0.12.0.jar>scijava.public=

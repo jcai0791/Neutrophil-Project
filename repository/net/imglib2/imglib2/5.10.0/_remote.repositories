@@ -1,0 +1,7 @@
+#NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
+#Tue Jan 18 14:21:13 CST 2022
+imglib2-5.10.0.jar>central=
+imglib2-5.10.0.jar>imagej.public=
+imglib2-5.10.0-sources.jar>central=
+imglib2-5.10.0.pom>central=
+imglib2-5.10.0.pom>imagej.public=

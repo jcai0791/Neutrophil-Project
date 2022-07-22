@@ -1,0 +1,6 @@
+#NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
+#Fri Feb 04 15:52:05 CST 2022
+webcam-capture-0.3.12-sources.jar>central=
+webcam-capture-0.3.12.jar>scijava.public=
+webcam-capture-0.3.12.pom>scijava.public=
+webcam-capture-0.3.12-sources.jar>scijava.public=

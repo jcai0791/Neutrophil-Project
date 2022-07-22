@@ -1,0 +1,5 @@
+#NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
+#Thu Jan 13 11:35:19 CST 2022
+jply-0.2.0-sources.jar>central=
+jply-0.2.0.pom>imagej.public=
+jply-0.2.0.jar>imagej.public=

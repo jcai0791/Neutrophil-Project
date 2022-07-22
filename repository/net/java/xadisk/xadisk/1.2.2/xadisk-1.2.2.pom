@@ -1,0 +1,184 @@
+<project>
+    <modelVersion>4.0.0</modelVersion>
+    <groupId>net.java.xadisk</groupId>
+    <artifactId>xadisk</artifactId>
+    <packaging>rar</packaging>
+	<!--first build with above value as jar with the rar's plugin element commented from below, and
+		then with above value as rar with the rar's plugin element uncommented from below.
+		this is a workaround to some issues-->
+	<!--Notes:
+		1. the current directory needs to have 3 things, "src" directory, "javadoc" directory and this pom.xml.
+		2. if you copy the "src" and "javadoc" folders from svn sync folders, do not foget to delete all the svn specific files
+			by deleting all "svn" named directories. (Else they will get packaged inside sources.jar and javadoc.jar).
+		3. remove the examples/tests etc directory from the src folder as these were not packaged even for earlier maven artifacts.
+	-->
+    <name>XADisk</name>
+    <version>1.2.2</version>
+    <description>XADisk Release 1.2.2</description>
+    <url>http://xadisk.java.net</url>
+
+    <repositories>
+        <repository>
+            <id>jvnet-nexus-snapshots</id>
+            <name>Java.net Nexus Snapshots Repository</name>
+            <url>https://maven.java.net/content/repositories/snapshots</url>
+            <releases>
+                <enabled>false</enabled>
+            </releases>
+            <snapshots>
+                <enabled>true</enabled>
+            </snapshots>
+        </repository>
+    </repositories>
+
+    <distributionManagement>
+        <snapshotRepository>
+            <id>jvnet-nexus-snapshots</id>
+            <name>Java.net Nexus Snapshots Repository</name>
+            <url>${jvnetDistMgmtSnapshotsUrl}</url>
+        </snapshotRepository>
+        <repository>
+            <id>jvnet-nexus-staging</id>
+            <name>Java.net Nexus Staging Repository</name>
+            <url>https://maven.java.net/service/local/staging/deploy/maven2/</url>
+        </repository>
+    </distributionManagement>
+
+    <build>
+		<sourceDirectory>src</sourceDirectory>
+        <resources>
+            <resource>
+                <directory>src</directory>
+                <excludes>
+                    <exclude>org/xadisk/**</exclude>
+					<exclude>META-INF/ra.xml</exclude>
+                </excludes>
+            </resource>
+        </resources>
+        <plugins>
+			<plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <configuration>
+                    <source>1.5</source>
+                    <target>1.5</target>
+                    <excludes>
+                        <exclude>org/xadisk/tests/**</exclude>
+                        <exclude>org/xadisk/examples/**</exclude>
+                        <exclude>org/xadisk/terminal/**</exclude>
+                    </excludes>
+                </configuration>
+            </plugin>
+			<plugin>
+					<groupId>org.apache.maven.plugins</groupId>
+					<artifactId>maven-rar-plugin</artifactId>
+					<executions>
+					<execution>
+						<phase>package</phase>
+						<goals>
+							<goal>rar</goal>
+						</goals>
+						<configuration>
+							<includeJar>true</includeJar>
+							<raXmlFile>src/META-INF/ra.xml</raXmlFile>
+						</configuration>
+					</execution>
+					</executions>
+			</plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-source-plugin</artifactId>
+                <version>2.1.2</version>
+                <executions>
+                    <execution>
+                        <id>attach-sources</id>
+                        <goals>
+                            <goal>jar-no-fork</goal>
+                        </goals>
+						<configuration>
+							<excludes>
+								<exclude>org/xadisk/tests/**</exclude>
+								<exclude>org/xadisk/examples/**</exclude>
+								<exclude>org/xadisk/terminal/**</exclude>
+							</excludes>
+						</configuration>
+                    </execution>
+                </executions>
+            </plugin>
+            <plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-jar-plugin</artifactId>
+				<version>2.3.1</version>
+				<executions>
+				  <execution>
+					<phase>package</phase>
+					<goals>
+					  <goal>jar</goal>
+					</goals>
+					<configuration>
+						<classesDirectory>javadoc</classesDirectory>
+						<classifier>javadoc</classifier>
+					</configuration>
+				  </execution>
+				</executions>
+			</plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-gpg-plugin</artifactId>
+                <version>1.1</version>
+                <executions>
+                    <execution>
+                        <id>sign-artifacts</id>
+                        <phase>verify</phase>
+                        <goals>
+                            <goal>sign</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
+        </plugins>
+    </build>
+
+    <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <jvnetDistMgmtSnapshotsUrl>https://maven.java.net/content/repositories/snapshots/</jvnetDistMgmtSnapshotsUrl>
+    </properties>
+
+    <licenses>
+        <license>
+            <name>Eclipse Public License, Version 1.0</name>
+            <url>http://www.opensource.org/licenses/eclipse-1.0.txt</url>
+            <distribution>repo</distribution>
+        </license>
+    </licenses>
+
+    <scm>
+        <connection>scm:svn:http://svn.java.net/svn/xadisk~svn/tags/1.2.2</connection>
+        <developerConnection>scm:svn:https://svn.java.net/svn/xadisk~svn/tags/1.2.2</developerConnection>
+        <url>http://java.net/projects/xadisk/sources/svn/show/tags/1.2.2</url>
+    </scm>
+
+    <developers>
+        <developer>
+            <id>nitin_verma</id>
+            <name>Nitin Verma</name>
+            <email>nitin_verma@java.net</email>
+        </developer>
+    </developers>
+
+    <dependencies>
+        <dependency>
+            <groupId>javax.resource</groupId>
+            <artifactId>connector-api</artifactId>
+            <version>1.5</version>
+			<scope>provided</scope>
+        </dependency>
+        <dependency>
+            <groupId>javaee</groupId>
+            <artifactId>javaee-api</artifactId>
+            <version>5</version>
+			<scope>provided</scope>
+        </dependency>
+    </dependencies>
+
+</project>

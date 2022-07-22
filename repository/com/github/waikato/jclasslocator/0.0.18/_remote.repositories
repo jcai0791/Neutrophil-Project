@@ -1,0 +1,5 @@
+#NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
+#Mon Jan 03 11:13:26 CST 2022
+jclasslocator-0.0.18.pom>scijava.public=
+jclasslocator-0.0.18.jar>scijava.public=
+jclasslocator-0.0.18-sources.jar>scijava.public=

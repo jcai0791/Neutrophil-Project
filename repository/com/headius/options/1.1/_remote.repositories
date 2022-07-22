@@ -1,0 +1,5 @@
+#NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
+#Thu Jan 13 11:35:24 CST 2022
+options-1.1.jar>central=
+options-1.1.pom>central=
+options-1.1-sources.jar>central=

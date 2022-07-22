@@ -1,0 +1,5 @@
+#NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
+#Mon Jan 03 11:13:08 CST 2022
+jgoodies-forms-1.6.0.pom>scijava.public=
+jgoodies-forms-1.6.0.jar>scijava.public=
+jgoodies-forms-1.6.0-sources.jar>scijava.public=

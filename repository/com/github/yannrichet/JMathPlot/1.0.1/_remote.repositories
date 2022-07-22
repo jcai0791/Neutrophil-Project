@@ -1,0 +1,5 @@
+#NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
+#Mon Jan 03 11:14:22 CST 2022
+JMathPlot-1.0.1-sources.jar>scijava.public=
+JMathPlot-1.0.1.pom>scijava.public=
+JMathPlot-1.0.1.jar>scijava.public=

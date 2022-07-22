@@ -1,0 +1,7 @@
+#NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
+#Fri Feb 04 15:21:08 CST 2022
+kryo-2.24.0.pom>central=
+kryo-2.24.0-sources.jar>scijava.public=
+kryo-2.24.0.jar>scijava.public=
+kryo-2.24.0.pom>scijava.public=
+kryo-2.24.0.jar>central=

@@ -1,0 +1,5 @@
+#NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
+#Mon Jan 03 11:12:34 CST 2022
+scifio-ome-xml-0.15.0.jar>scijava.public=
+scifio-ome-xml-0.15.0.pom>scijava.public=
+scifio-ome-xml-0.15.0-sources.jar>scijava.public=

@@ -1,0 +1,5 @@
+#NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
+#Thu Jan 13 11:35:58 CST 2022
+scripting-jython-1.0.0-sources.jar>imagej.public=
+scripting-jython-1.0.0.pom>imagej.public=
+scripting-jython-1.0.0.jar>imagej.public=

@@ -1,0 +1,5 @@
+#NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
+#Mon Jan 03 11:12:48 CST 2022
+REngine-2.1.0-sources.jar>scijava.public=
+REngine-2.1.0.pom>scijava.public=
+REngine-2.1.0.jar>scijava.public=

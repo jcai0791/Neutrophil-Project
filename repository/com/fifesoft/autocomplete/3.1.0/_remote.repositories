@@ -1,0 +1,7 @@
+#NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
+#Thu Jan 13 11:35:18 CST 2022
+autocomplete-3.1.0.jar>imagej.public=
+autocomplete-3.1.0-sources.jar>central=
+autocomplete-3.1.0.jar>central=
+autocomplete-3.1.0.pom>central=
+autocomplete-3.1.0.pom>imagej.public=

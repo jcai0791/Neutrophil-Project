@@ -1,0 +1,5 @@
+#NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
+#Mon Jan 03 11:11:54 CST 2022
+jgrapht-core-1.3.0-sources.jar>scijava.public=
+jgrapht-core-1.3.0.jar>scijava.public=
+jgrapht-core-1.3.0.pom>scijava.public=

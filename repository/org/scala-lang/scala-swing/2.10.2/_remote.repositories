@@ -1,0 +1,5 @@
+#NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
+#Mon Jan 03 11:13:28 CST 2022
+scala-swing-2.10.2-sources.jar>scijava.public=
+scala-swing-2.10.2.pom>scijava.public=
+scala-swing-2.10.2.jar>scijava.public=

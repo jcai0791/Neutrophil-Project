@@ -1,0 +1,7 @@
+#NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
+#Thu Jan 13 11:34:38 CST 2022
+commons-logging-1.2.jar>imagej.public=
+commons-logging-1.2-sources.jar>scijava.public=
+commons-logging-1.2.pom>central=
+commons-logging-1.2.jar>scijava.public=
+commons-logging-1.2.pom>imagej.public=

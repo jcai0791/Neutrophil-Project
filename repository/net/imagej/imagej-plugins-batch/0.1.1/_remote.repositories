@@ -1,0 +1,7 @@
+#NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
+#Tue Jan 18 14:21:14 CST 2022
+imagej-plugins-batch-0.1.1.jar>scijava.public=
+imagej-plugins-batch-0.1.1.pom>imagej.public=
+imagej-plugins-batch-0.1.1.pom>scijava.public=
+imagej-plugins-batch-0.1.1.jar>imagej.public=
+imagej-plugins-batch-0.1.1-sources.jar>scijava.public=

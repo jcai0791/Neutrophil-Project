@@ -1,0 +1,5 @@
+#NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
+#Thu Jan 13 11:35:19 CST 2022
+joml-1.9.16.jar>central=
+joml-1.9.16-sources.jar>central=
+joml-1.9.16.pom>central=

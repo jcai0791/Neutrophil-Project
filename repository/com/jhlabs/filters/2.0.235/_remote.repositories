@@ -1,0 +1,5 @@
+#NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
+#Mon Jan 03 11:12:50 CST 2022
+filters-2.0.235.jar>scijava.public=
+filters-2.0.235.pom>scijava.public=
+filters-2.0.235-sources.jar>scijava.public=

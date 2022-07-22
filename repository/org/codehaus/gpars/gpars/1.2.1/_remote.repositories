@@ -1,0 +1,6 @@
+#NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
+#Fri Feb 04 15:52:01 CST 2022
+gpars-1.2.1.pom>imagej.public=
+gpars-1.2.1-sources.jar>central=
+gpars-1.2.1.jar>imagej.public=
+gpars-1.2.1-sources.jar>scijava.public=

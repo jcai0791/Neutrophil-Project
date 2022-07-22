@@ -1,0 +1,5 @@
+#NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
+#Mon Jan 03 11:12:08 CST 2022
+modulator-1.0.pom>imagej.public=
+modulator-1.0.jar>imagej.public=
+modulator-1.0-sources.jar>scijava.public=

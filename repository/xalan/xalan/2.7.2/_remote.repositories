@@ -1,0 +1,5 @@
+#NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
+#Thu Jan 13 11:35:28 CST 2022
+xalan-2.7.2-sources.jar>central=
+xalan-2.7.2.jar>central=
+xalan-2.7.2.pom>central=

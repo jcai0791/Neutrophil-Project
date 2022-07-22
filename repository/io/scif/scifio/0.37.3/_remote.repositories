@@ -1,0 +1,5 @@
+#NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
+#Mon Jan 03 11:12:32 CST 2022
+scifio-0.37.3-sources.jar>scijava.public=
+scifio-0.37.3.pom>scijava.public=
+scifio-0.37.3.jar>scijava.public=

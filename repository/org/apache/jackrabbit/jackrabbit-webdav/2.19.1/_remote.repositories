@@ -1,0 +1,5 @@
+#NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
+#Thu Jan 13 11:35:20 CST 2022
+jackrabbit-webdav-2.19.1.jar>central=
+jackrabbit-webdav-2.19.1.pom>central=
+jackrabbit-webdav-2.19.1-sources.jar>central=

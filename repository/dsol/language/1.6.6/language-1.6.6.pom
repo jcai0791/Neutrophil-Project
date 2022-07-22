@@ -1,0 +1,129 @@
+<?xml version="1.0"?><project>
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>dsol</groupId>
+  <artifactId>language</artifactId>
+  <name>language</name>
+  <version>1.6.6</version>
+  <description>The language library for DSOL.</description>
+  <url>http://www.simulation.tudelft.nl/dsol/language/</url>
+  <inceptionYear>2002</inceptionYear>
+  <developers>
+    <developer>
+      <id>PeterJacobs</id>
+      <name>Peter H.M. Jacobs</name>
+      <email>p.h.m.jacobs@tbm.tudelft.nl</email>
+      <url>http://www.tbm.tudelft.nl/webstaf/peterja</url>
+      <organization>Delft University of Technology, the 
+                Netherlands</organization>
+      <timezone>1</timezone>
+    </developer>
+    <developer>
+      <id>alexandv</id>
+      <name>Alexander Verbraeck</name>
+      <email>a.verbraeck@tbm.tudelft.nl</email>
+      <url>http://www.tbm.tudelft.nl/webstaf/alexandv</url>
+      <organization>Delft University of Technology, the 
+                Netherlands</organization>
+      <timezone>1</timezone>
+    </developer>
+    <developer>
+      <id>nielsla</id>
+      <name>Niels Lang</name>
+      <email>nlang@fbk.eur.nl</email>
+      <url>http://www.eur.nl/fbk/dep/dep1/Introduction/Staff/People/Lang</url>
+      <organization>Erasmus University Rotterdam, the 
+                Netherlands</organization>
+      <timezone>1</timezone>
+    </developer>
+    <developer>
+      <id>stijnh</id>
+      <name>Stijn-Pieter van Houten</name>
+      <email>stijnh@tbm.tudelft.nl</email>
+      <url>http://www.tbm.tudelft.nl/webstaf/stijnh</url>
+      <organization>Delft University of Technology, the 
+                Netherlands</organization>
+      <timezone>1</timezone>
+    </developer>
+    <developer>
+      <id>royc</id>
+      <name>Roy Chin</name>
+      <email>royc@tbm.tudelft.nl</email>
+      <url>http://www.tbm.tudelft.nl/webstaf/royc</url>
+      <organization>Delft University of Technology, the 
+                Netherlands</organization>
+      <timezone>1</timezone>
+    </developer>
+  </developers>
+  <licenses>
+    <license>
+      <name>GNU Lesser General Public License</name>
+      <url>http://www.gnu.org/copyleft/lesser.html</url>
+      <distribution>repo</distribution>
+    </license>
+  </licenses>
+  <organization>
+    <name>Delft University of Technology, the Netherlands</name>
+    <url>http://www.tudelft.nl</url>
+  </organization>
+  <build>
+    <sourceDirectory>src/java</sourceDirectory>
+    <resources>
+      <resource>
+        <directory>src/conf</directory>
+        <includes>
+          <include>*.properties</include>
+        </includes>
+      </resource>
+    </resources>
+  </build>
+  <repositories>
+    <repository>
+      <id>simulation.tudelft.nl</id>
+      <url>http://www.simulation.tudelft.nl/maven</url>
+    </repository>
+  </repositories>
+  <dependencies>
+    <dependency>
+      <groupId>java3d</groupId>
+      <artifactId>vecmath</artifactId>
+      <version>1.3.1</version>
+      <scope>compile</scope>
+    </dependency>
+    <dependency>
+      <groupId>java3d</groupId>
+      <artifactId>j3d-core</artifactId>
+      <version>1.3.1</version>
+      <scope>compile</scope>
+    </dependency>
+    <dependency>
+      <groupId>java3d</groupId>
+      <artifactId>j3d-core-utils</artifactId>
+      <version>1.3.1</version>
+      <scope>compile</scope>
+    </dependency>
+    <dependency>
+      <groupId>junit</groupId>
+      <artifactId>junit</artifactId>
+      <version>3.8.1</version>
+      <scope>test</scope>
+    </dependency>
+  </dependencies>
+  <distributionManagement>
+    <repository>
+      <id>R1</id>
+      <name>simulation.tudelft.nl</name>
+      <url>scp://sk.tbm.tudelft.nl/home/web/simulation.tudelft.nl/html/maven</url>
+    </repository>
+    <snapshotRepository>
+      <id>R1</id>
+      <name>simulation.tudelft.nl</name>
+      <url>scp://sk.tbm.tudelft.nl/home/web/simulation.tudelft.nl/html/maven</url>
+    </snapshotRepository>
+    <site>
+      <id>R1</id>
+      <name>sk.tbm.tudelft.nl/language</name>
+      <url>scp://sk.tbm.tudelft.nl/home/web/simulation.tudelft.nl/html/dsol/language</url>
+    </site>
+    <status>deployed</status>
+  </distributionManagement>
+</project>

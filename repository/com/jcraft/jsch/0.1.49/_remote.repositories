@@ -1,0 +1,5 @@
+#NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
+#Thu Jan 13 11:35:20 CST 2022
+jsch-0.1.49.jar>central=
+jsch-0.1.49.pom>central=
+jsch-0.1.49-sources.jar>central=

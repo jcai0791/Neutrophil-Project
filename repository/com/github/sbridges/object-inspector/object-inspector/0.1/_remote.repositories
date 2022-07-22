@@ -1,0 +1,6 @@
+#NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
+#Tue Jan 18 14:21:14 CST 2022
+object-inspector-0.1.pom>imagej.public=
+object-inspector-0.1.jar>scijava.public=
+object-inspector-0.1.pom>scijava.public=
+object-inspector-0.1.jar>imagej.public=

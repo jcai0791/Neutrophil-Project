@@ -1,0 +1,6 @@
+#NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
+#Fri Feb 04 15:51:59 CST 2022
+VectorGraphics2D-0.13-sources.jar>central=
+VectorGraphics2D-0.13.pom>imagej.public=
+VectorGraphics2D-0.13.jar>imagej.public=
+VectorGraphics2D-0.13-sources.jar>scijava.public=

@@ -1,0 +1,7 @@
+#NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
+#Fri Feb 04 15:21:08 CST 2022
+jsr305-3.0.1.pom>central=
+jsr305-3.0.1-sources.jar>scijava.public=
+jsr305-3.0.1.pom>scijava.public=
+jsr305-3.0.1.jar>scijava.public=
+jsr305-3.0.1.jar>central=

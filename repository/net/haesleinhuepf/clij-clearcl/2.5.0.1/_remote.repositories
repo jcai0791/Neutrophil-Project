@@ -1,0 +1,8 @@
+#NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
+#Fri Feb 04 15:51:58 CST 2022
+clij-clearcl-2.5.0.1-sources.jar>central=
+clij-clearcl-2.5.0.1.jar>imagej.public=
+clij-clearcl-2.5.0.1-sources.jar>scijava.public=
+clij-clearcl-2.5.0.1.jar>scijava.public=
+clij-clearcl-2.5.0.1.pom>scijava.public=
+clij-clearcl-2.5.0.1.pom>imagej.public=

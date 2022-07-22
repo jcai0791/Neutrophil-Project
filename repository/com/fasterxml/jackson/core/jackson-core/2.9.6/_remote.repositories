@@ -1,0 +1,8 @@
+#NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
+#Fri Feb 04 15:52:06 CST 2022
+jackson-core-2.9.6.jar>scijava.public=
+jackson-core-2.9.6.pom>scijava.public=
+jackson-core-2.9.6-sources.jar>scijava.public=
+jackson-core-2.9.6.jar>central=
+jackson-core-2.9.6.pom>central=
+jackson-core-2.9.6-sources.jar>central=

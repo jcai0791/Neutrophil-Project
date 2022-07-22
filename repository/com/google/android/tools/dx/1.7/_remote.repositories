@@ -1,0 +1,6 @@
+#NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
+#Thu Jan 13 11:37:30 CST 2022
+dx-1.7-sources.jar>imagej.public=
+dx-1.7.pom>imagej.public=
+dx-1.7.jar>imagej.public=
+dx-1.7.pom>scijava.public=

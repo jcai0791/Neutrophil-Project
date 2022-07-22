@@ -1,0 +1,7 @@
+#NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
+#Thu Jan 13 11:37:30 CST 2022
+imagej-legacy-0.37.4.pom>imagej.public=
+imagej-legacy-0.37.4.jar>imagej.public=
+imagej-legacy-0.37.4-sources.jar>imagej.public=
+imagej-legacy-0.37.4.pom>scijava.public=
+imagej-legacy-0.37.4.jar>scijava.public=

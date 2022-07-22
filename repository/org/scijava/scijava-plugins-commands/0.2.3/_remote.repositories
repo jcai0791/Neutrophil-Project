@@ -1,0 +1,7 @@
+#NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
+#Tue Jan 18 14:21:14 CST 2022
+scijava-plugins-commands-0.2.3.jar>scijava.public=
+scijava-plugins-commands-0.2.3.pom>imagej.public=
+scijava-plugins-commands-0.2.3.pom>scijava.public=
+scijava-plugins-commands-0.2.3.jar>imagej.public=
+scijava-plugins-commands-0.2.3-sources.jar>scijava.public=

@@ -1,0 +1,5 @@
+#NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
+#Thu Jan 13 11:36:01 CST 2022
+jnr-a64asm-1.0.0.pom>imagej.public=
+jnr-a64asm-1.0.0-sources.jar>imagej.public=
+jnr-a64asm-1.0.0.jar>imagej.public=

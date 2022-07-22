@@ -1,0 +1,5 @@
+#NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
+#Mon Jan 03 11:12:03 CST 2022
+scripting-beanshell-0.3.3.pom>scijava.public=
+scripting-beanshell-0.3.3-sources.jar>scijava.public=
+scripting-beanshell-0.3.3.jar>scijava.public=

@@ -1,0 +1,5 @@
+#NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
+#Mon Jan 03 11:12:06 CST 2022
+jnr-posix-3.0.44.pom>imagej.public=
+jnr-posix-3.0.44.jar>imagej.public=
+jnr-posix-3.0.44-sources.jar>scijava.public=

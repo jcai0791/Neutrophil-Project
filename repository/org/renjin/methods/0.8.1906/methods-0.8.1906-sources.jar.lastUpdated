@@ -1,0 +1,24 @@
+#NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
+#Thu Jan 13 11:36:43 CST 2022
+https\://maven.scijava.org/content/groups/public/.error=
+@default-mvnrepo-http\://mvnrepository.com/artifact/.lastUpdated=1642095400267
+http\://artifacts.openmicroscopy.org/artifactory/maven/.lastUpdated=1642095403235
+https\://maven.imagej.net/content/groups/public/.lastUpdated=1642095399861
+https\://repo.maven.apache.org/maven2/.lastUpdated=1641229945831
+https\://maven.imagej.net/content/groups/public/.error=
+https\://mvnrepository.com/artifact/org.jocl/jocl/.error=Could not transfer artifact org.renjin\:methods\:jar\:sources\:0.8.1906 from/to jocl (https\://mvnrepository.com/artifact/org.jocl/jocl)\: Access denied to https\://mvnrepository.com/artifact/org.jocl/jocl/org/renjin/methods/0.8.1906/methods-0.8.1906-sources.jar. Error code 403, 
+https\://repo.maven.apache.org/maven2/.error=
+http\://maven.imagej.net/content/repositories/releases/.lastUpdated=1642095400345
+http\://oss.sonatype.org/content/groups/public/.error=
+https\://s01.oss.sonatype.org/service/local/repositories/releases/.error=Could not transfer artifact org.renjin\:methods\:jar\:sources\:0.8.1906 from/to s01.oss (https\://s01.oss.sonatype.org/service/local/repositories/releases)\: Access denied to https\://s01.oss.sonatype.org/service/local/repositories/releases/org/renjin/methods/0.8.1906/methods-0.8.1906-sources.jar. Error code 401, 
+http\://maven.imagej.net/content/repositories/snapshots/.lastUpdated=1642095400408
+https\://maven.scijava.org/content/groups/public/.lastUpdated=1641229945796
+http\://oss.sonatype.org/content/groups/public/.lastUpdated=1642095400236
+https\://artifacts.unidata.ucar.edu/content/repositories/unidata-releases/.error=
+http\://artifacts.openmicroscopy.org/artifactory/maven/.error=
+https\://artifacts.unidata.ucar.edu/content/repositories/unidata-releases/.lastUpdated=1642095400642
+http\://maven.imagej.net/content/repositories/releases/.error=
+http\://maven.imagej.net/content/repositories/snapshots/.error=
+http\://mvnrepository.com/artifact/.error=Could not transfer artifact org.renjin\:methods\:jar\:sources\:0.8.1906 from/to mvnrepo (http\://mvnrepository.com/artifact)\: Access denied to http\://mvnrepository.com/artifact/org/renjin/methods/0.8.1906/methods-0.8.1906-sources.jar. Error code 403, Forbidden
+@default-s01.oss-https\://s01.oss.sonatype.org/service/local/repositories/releases/.lastUpdated=1642095403485
+@default-jocl-https\://mvnrepository.com/artifact/org.jocl/jocl/.lastUpdated=1642095400470

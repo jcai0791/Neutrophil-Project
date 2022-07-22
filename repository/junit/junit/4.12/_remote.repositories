@@ -1,0 +1,6 @@
+#NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
+#Mon Jan 03 11:14:23 CST 2022
+junit-4.12-sources.jar>scijava.public=
+junit-4.12.jar>scijava.public=
+junit-4.12.jar>central=
+junit-4.12.pom>central=

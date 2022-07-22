@@ -1,0 +1,8 @@
+#NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
+#Fri Feb 04 15:51:56 CST 2022
+clij-core-1.8.0.6.pom>imagej.public=
+clij-core-1.8.0.6.jar>scijava.public=
+clij-core-1.8.0.6.jar>imagej.public=
+clij-core-1.8.0.6.pom>scijava.public=
+clij-core-1.8.0.6-sources.jar>central=
+clij-core-1.8.0.6-sources.jar>scijava.public=

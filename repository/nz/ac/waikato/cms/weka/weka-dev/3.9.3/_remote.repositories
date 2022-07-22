@@ -1,0 +1,6 @@
+#NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
+#Fri Feb 04 15:52:05 CST 2022
+weka-dev-3.9.3-sources.jar>central=
+weka-dev-3.9.3.jar>scijava.public=
+weka-dev-3.9.3.pom>scijava.public=
+weka-dev-3.9.3-sources.jar>scijava.public=

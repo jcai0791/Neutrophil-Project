@@ -1,0 +1,5 @@
+#NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
+#Mon Jan 03 11:11:46 CST 2022
+mail-1.5.0-b01-sources.jar>scijava.public=
+mail-1.5.0-b01.jar>scijava.public=
+mail-1.5.0-b01.pom>scijava.public=

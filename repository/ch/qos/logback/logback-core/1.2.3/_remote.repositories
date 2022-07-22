@@ -1,0 +1,5 @@
+#NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
+#Mon Jan 03 11:12:38 CST 2022
+logback-core-1.2.3.jar>scijava.public=
+logback-core-1.2.3.pom>scijava.public=
+logback-core-1.2.3-sources.jar>scijava.public=

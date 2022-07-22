@@ -1,0 +1,5 @@
+#NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
+#Thu Jan 13 11:35:23 CST 2022
+jnr-ffi-1.0.7.pom>central=
+jnr-ffi-1.0.7.jar>central=
+jnr-ffi-1.0.7-sources.jar>central=

@@ -1,0 +1,5 @@
+#NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
+#Mon Jan 03 11:12:07 CST 2022
+options-1.4-sources.jar>scijava.public=
+options-1.4.pom>imagej.public=
+options-1.4.jar>imagej.public=

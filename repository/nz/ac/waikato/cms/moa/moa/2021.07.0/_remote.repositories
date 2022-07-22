@@ -1,0 +1,5 @@
+#NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
+#Mon Jan 03 11:13:26 CST 2022
+moa-2021.07.0-sources.jar>scijava.public=
+moa-2021.07.0.jar>scijava.public=
+moa-2021.07.0.pom>scijava.public=

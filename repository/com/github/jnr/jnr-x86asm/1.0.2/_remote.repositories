@@ -1,0 +1,6 @@
+#NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
+#Fri Feb 04 15:52:01 CST 2022
+jnr-x86asm-1.0.2.jar>imagej.public=
+jnr-x86asm-1.0.2-sources.jar>scijava.public=
+jnr-x86asm-1.0.2-sources.jar>central=
+jnr-x86asm-1.0.2.pom>imagej.public=

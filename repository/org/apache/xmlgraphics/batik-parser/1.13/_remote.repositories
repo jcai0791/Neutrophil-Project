@@ -1,0 +1,5 @@
+#NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
+#Thu Jan 13 11:37:17 CST 2022
+batik-parser-1.13-sources.jar>imagej.public=
+batik-parser-1.13.pom>imagej.public=
+batik-parser-1.13.jar>imagej.public=

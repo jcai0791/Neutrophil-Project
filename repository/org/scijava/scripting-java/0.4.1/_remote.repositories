@@ -1,0 +1,7 @@
+#NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
+#Thu Jan 13 11:35:05 CST 2022
+scripting-java-0.4.1-sources.jar>scijava.public=
+scripting-java-0.4.1.pom>imagej.public=
+scripting-java-0.4.1.jar>imagej.public=
+scripting-java-0.4.1.jar>scijava.public=
+scripting-java-0.4.1.pom>scijava.public=

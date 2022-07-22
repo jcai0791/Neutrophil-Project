@@ -1,0 +1,5 @@
+#NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
+#Mon Jan 03 11:14:22 CST 2022
+jdom-1.0-sources.jar>scijava.public=
+jdom-1.0.pom>scijava.public=
+jdom-1.0.jar>scijava.public=

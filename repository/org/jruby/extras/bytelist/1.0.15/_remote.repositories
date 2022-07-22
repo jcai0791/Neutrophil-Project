@@ -1,0 +1,5 @@
+#NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
+#Mon Jan 03 11:12:07 CST 2022
+bytelist-1.0.15.pom>imagej.public=
+bytelist-1.0.15.jar>imagej.public=
+bytelist-1.0.15-sources.jar>scijava.public=

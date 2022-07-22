@@ -1,0 +1,4 @@
+#NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
+#Mon Jan 03 11:11:28 CST 2022
+pom-scijava-23.2.0.pom>scijava.public=
+pom-scijava-23.2.0.pom>imagej.public=

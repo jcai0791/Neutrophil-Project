@@ -1,0 +1,5 @@
+#NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
+#Thu Jan 13 11:35:55 CST 2022
+scripting-beanshell-0.3.4.jar>imagej.public=
+scripting-beanshell-0.3.4-sources.jar>imagej.public=
+scripting-beanshell-0.3.4.pom>imagej.public=

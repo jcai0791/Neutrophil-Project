@@ -1,0 +1,5 @@
+#NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
+#Mon Jan 03 11:12:07 CST 2022
+unsafe-fences-1.0.pom>imagej.public=
+unsafe-fences-1.0-sources.jar>scijava.public=
+unsafe-fences-1.0.jar>imagej.public=

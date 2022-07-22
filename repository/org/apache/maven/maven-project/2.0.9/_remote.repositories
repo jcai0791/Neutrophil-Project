@@ -1,0 +1,7 @@
+#NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
+#Thu Jan 13 11:32:41 CST 2022
+maven-project-2.0.9.jar>central=
+maven-project-2.0.9.pom>central=
+maven-project-2.0.9-sources.jar>scijava.public=
+maven-project-2.0.9.pom>scijava.public=
+maven-project-2.0.9.jar>scijava.public=

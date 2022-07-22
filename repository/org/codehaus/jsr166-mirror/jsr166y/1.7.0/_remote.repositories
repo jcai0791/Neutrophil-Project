@@ -1,0 +1,6 @@
+#NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
+#Fri Feb 04 15:52:01 CST 2022
+jsr166y-1.7.0.jar>imagej.public=
+jsr166y-1.7.0-sources.jar>central=
+jsr166y-1.7.0.pom>imagej.public=
+jsr166y-1.7.0-sources.jar>scijava.public=

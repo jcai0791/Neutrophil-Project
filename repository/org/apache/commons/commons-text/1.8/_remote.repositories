@@ -1,0 +1,5 @@
+#NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
+#Thu Jan 13 11:35:32 CST 2022
+commons-text-1.8.pom>imagej.public=
+commons-text-1.8-sources.jar>imagej.public=
+commons-text-1.8.jar>imagej.public=

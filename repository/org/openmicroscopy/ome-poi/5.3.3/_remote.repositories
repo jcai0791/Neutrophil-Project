@@ -1,0 +1,5 @@
+#NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
+#Mon Jan 03 11:12:40 CST 2022
+ome-poi-5.3.3-sources.jar>scijava.public=
+ome-poi-5.3.3.pom>scijava.public=
+ome-poi-5.3.3.jar>scijava.public=

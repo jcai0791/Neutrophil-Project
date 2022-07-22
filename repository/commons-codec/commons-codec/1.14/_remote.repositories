@@ -1,0 +1,5 @@
+#NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
+#Thu Jan 13 11:35:55 CST 2022
+commons-codec-1.14.pom>imagej.public=
+commons-codec-1.14-sources.jar>imagej.public=
+commons-codec-1.14.jar>imagej.public=

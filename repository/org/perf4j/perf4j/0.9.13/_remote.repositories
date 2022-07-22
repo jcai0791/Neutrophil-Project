@@ -1,0 +1,5 @@
+#NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
+#Mon Jan 03 11:12:39 CST 2022
+perf4j-0.9.13.pom>scijava.public=
+perf4j-0.9.13.jar>scijava.public=
+perf4j-0.9.13-sources.jar>scijava.public=

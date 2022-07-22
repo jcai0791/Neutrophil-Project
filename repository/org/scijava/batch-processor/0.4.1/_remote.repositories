@@ -1,0 +1,7 @@
+#NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
+#Thu Jan 13 11:35:47 CST 2022
+batch-processor-0.4.1.pom>imagej.public=
+batch-processor-0.4.1.pom>scijava.public=
+batch-processor-0.4.1.jar>scijava.public=
+batch-processor-0.4.1.jar>imagej.public=
+batch-processor-0.4.1-sources.jar>imagej.public=

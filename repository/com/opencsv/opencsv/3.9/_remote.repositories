@@ -1,0 +1,5 @@
+#NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
+#Mon Jan 03 11:13:32 CST 2022
+opencsv-3.9-sources.jar>scijava.public=
+opencsv-3.9.pom>scijava.public=
+opencsv-3.9.jar>scijava.public=

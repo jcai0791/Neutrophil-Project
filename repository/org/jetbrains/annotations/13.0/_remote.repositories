@@ -1,0 +1,7 @@
+#NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
+#Tue Jan 18 14:21:14 CST 2022
+annotations-13.0.jar>central=
+annotations-13.0.pom>central=
+annotations-13.0-sources.jar>central=
+annotations-13.0.pom>imagej.public=
+annotations-13.0.jar>imagej.public=

@@ -1,0 +1,7 @@
+#NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
+#Thu Jan 13 11:35:17 CST 2022
+miglayout-swing-5.2.jar>central=
+miglayout-swing-5.2-sources.jar>central=
+miglayout-swing-5.2.pom>central=
+miglayout-swing-5.2.pom>imagej.public=
+miglayout-swing-5.2.jar>imagej.public=

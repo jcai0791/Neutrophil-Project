@@ -1,0 +1,8 @@
+#NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
+#Fri Feb 04 15:52:05 CST 2022
+minio-5.0.2-sources.jar>central=
+minio-5.0.2.pom>central=
+minio-5.0.2-sources.jar>scijava.public=
+minio-5.0.2.jar>scijava.public=
+minio-5.0.2.pom>scijava.public=
+minio-5.0.2.jar>central=

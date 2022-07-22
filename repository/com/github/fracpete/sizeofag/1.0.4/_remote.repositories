@@ -1,0 +1,5 @@
+#NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
+#Mon Jan 03 11:13:26 CST 2022
+sizeofag-1.0.4.jar>scijava.public=
+sizeofag-1.0.4.pom>scijava.public=
+sizeofag-1.0.4-sources.jar>scijava.public=

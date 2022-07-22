@@ -1,0 +1,8 @@
+#NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
+#Fri Feb 04 15:52:05 CST 2022
+okio-1.12.0.pom>scijava.public=
+okio-1.12.0.jar>central=
+okio-1.12.0.pom>central=
+okio-1.12.0-sources.jar>central=
+okio-1.12.0.jar>scijava.public=
+okio-1.12.0-sources.jar>scijava.public=

@@ -1,0 +1,8 @@
+#NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
+#Fri Feb 04 15:51:57 CST 2022
+trove4j-3.0.3.pom>central=
+trove4j-3.0.3.jar>central=
+trove4j-3.0.3-sources.jar>central=
+trove4j-3.0.3-sources.jar>scijava.public=
+trove4j-3.0.3.pom>imagej.public=
+trove4j-3.0.3.jar>imagej.public=

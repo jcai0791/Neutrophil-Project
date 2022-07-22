@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+
+  <modelVersion>4.0.0</modelVersion>
+
+  <groupId>net.sf.meka.thirdparty</groupId>
+  <artifactId>mulan</artifactId>
+  <version>1.4.0</version>
+  <packaging>jar</packaging>
+
+  <name>mulan</name>
+  <description>Mulan is an open-source Java library for learning from multi-label datasets.</description>
+  <url>http://mulan.sourceforge.net/</url>
+
+  <licenses>
+    <license>
+      <name>GNU General Public License 3</name>
+      <url>http://www.gnu.org/licenses/gpl-3.0.txt</url>
+    </license>
+  </licenses>
+
+  <developers>
+    <developer>
+      <id>tsoumakas</id>
+      <name>Grigorios Tsoumakas</name>
+    </developer>
+    <developer>
+      <id>lefman</id>
+      <name>Eleftherios Spyromitros-Xioufis</name>
+    </developer>
+    <developer>
+      <id>vilcek</id>
+      <name>Jozef Vilcek</name>
+    </developer>
+  </developers>
+
+  <dependencies>
+    <dependency>
+      <groupId>nz.ac.waikato.cms.weka</groupId>
+      <artifactId>weka-dev</artifactId>
+      <version>[3.7.6,)</version>
+    </dependency>
+  </dependencies>
+
+  <scm>
+    <connection>scm:svn:http://svn.code.sf.net/p/mulan/code/trunk</connection>
+    <developerConnection>scm:svn:http://svn.code.sf.net/p/mulan/code/trunk</developerConnection>
+    <url>http://svn.code.sf.net/p/mulan/code/trunk</url>
+  </scm>
+</project>

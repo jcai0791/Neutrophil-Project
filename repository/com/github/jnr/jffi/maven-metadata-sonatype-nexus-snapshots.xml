@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metadata>
+  <groupId>com.github.jnr</groupId>
+  <artifactId>jffi</artifactId>
+  <versioning>
+    <latest>1.0.12-SNAPSHOT</latest>
+    <release></release>
+    <versions>
+      <version>1.0.12-SNAPSHOT</version>
+      <version>1.3.9-SNAPSHOT</version>
+    </versions>
+    <lastUpdated>20220105234820</lastUpdated>
+  </versioning>
+</metadata>

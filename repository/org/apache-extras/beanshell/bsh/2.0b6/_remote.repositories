@@ -1,0 +1,6 @@
+#NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
+#Fri Feb 04 15:52:00 CST 2022
+bsh-2.0b6-sources.jar>scijava.public=
+bsh-2.0b6.pom>imagej.public=
+bsh-2.0b6-sources.jar>central=
+bsh-2.0b6.jar>imagej.public=

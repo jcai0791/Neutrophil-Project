@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metadata modelVersion="1.1.0">
+  <groupId>nz.ac.waikato.cms.moa</groupId>
+  <artifactId>moa-pom</artifactId>
+  <version>2018.6-SNAPSHOT</version>
+  <versioning>
+    <snapshot>
+      <timestamp>20180623.063957</timestamp>
+      <buildNumber>1</buildNumber>
+    </snapshot>
+    <lastUpdated>20180623063957</lastUpdated>
+    <snapshotVersions>
+      <snapshotVersion>
+        <extension>pom</extension>
+        <value>2018.6-20180623.063957-1</value>
+        <updated>20180623063957</updated>
+      </snapshotVersion>
+    </snapshotVersions>
+  </versioning>
+</metadata>

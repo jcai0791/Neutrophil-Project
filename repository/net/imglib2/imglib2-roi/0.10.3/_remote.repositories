@@ -1,0 +1,7 @@
+#NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
+#Thu Jan 13 11:35:31 CST 2022
+imglib2-roi-0.10.3.jar>imagej.public=
+imglib2-roi-0.10.3-sources.jar>imagej.public=
+imglib2-roi-0.10.3.jar>scijava.public=
+imglib2-roi-0.10.3.pom>scijava.public=
+imglib2-roi-0.10.3.pom>imagej.public=

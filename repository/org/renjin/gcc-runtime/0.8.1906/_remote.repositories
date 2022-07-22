@@ -1,0 +1,5 @@
+#NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
+#Mon Jan 03 11:12:15 CST 2022
+gcc-runtime-0.8.1906-sources.jar>scijava.public=
+gcc-runtime-0.8.1906.pom>imagej.public=
+gcc-runtime-0.8.1906.jar>imagej.public=

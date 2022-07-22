@@ -1,0 +1,6 @@
+#NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
+#Fri Feb 04 15:52:05 CST 2022
+mtj-1.0.4-sources.jar>central=
+mtj-1.0.4-sources.jar>scijava.public=
+mtj-1.0.4.jar>scijava.public=
+mtj-1.0.4.pom>scijava.public=

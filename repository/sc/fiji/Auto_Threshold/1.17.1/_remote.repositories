@@ -1,0 +1,5 @@
+#NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
+#Mon Jan 03 11:11:58 CST 2022
+Auto_Threshold-1.17.1.jar>scijava.public=
+Auto_Threshold-1.17.1-sources.jar>scijava.public=
+Auto_Threshold-1.17.1.pom>scijava.public=

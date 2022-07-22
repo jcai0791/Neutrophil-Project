@@ -1,0 +1,6 @@
+#NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
+#Fri Feb 04 15:21:05 CST 2022
+httpcore-4.0.1.pom>central=
+httpcore-4.0.1.jar>scijava.public=
+httpcore-4.0.1.pom>scijava.public=
+httpcore-4.0.1-sources.jar>scijava.public=

@@ -1,0 +1,6 @@
+#NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
+#Thu Jan 13 11:37:39 CST 2022
+jffi-1.2.17.jar>scijava.public=
+jffi-1.2.17.pom>scijava.public=
+jffi-1.2.17-sources.jar>scijava.public=
+jffi-1.2.17-native.jar>scijava.public=

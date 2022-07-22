@@ -1,0 +1,5 @@
+#NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
+#Mon Jan 03 11:12:28 CST 2022
+scripting-scala-0.2.1-sources.jar>scijava.public=
+scripting-scala-0.2.1.pom>scijava.public=
+scripting-scala-0.2.1.jar>scijava.public=

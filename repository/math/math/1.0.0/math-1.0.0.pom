@@ -1,0 +1,36 @@
+<project>
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>math</groupId>
+  <artifactId>math</artifactId>
+  <name>math</name>
+  <version>1.0.0</version>
+  <description>math</description>
+  <url>http://unknown.org</url>
+  <inceptionYear>2001</inceptionYear>
+  <mailingLists>
+  </mailingLists>
+  <developers>
+  </developers>
+  <scm>
+  </scm>
+  <organization>
+    <name>MetaStuff Ltd.</name>
+    <url>http://sourceforge.net/projects/math</url>
+  </organization>
+  <build>
+    <sourceDirectory>src/java</sourceDirectory>
+    <testSourceDirectory>src/test</testSourceDirectory>
+    <resources>
+      <resource>
+        <directory>src/java</directory>
+        <includes>
+          <include>**/*.properties</include>
+        </includes>
+      </resource>
+    </resources>
+  </build>
+  <dependencies>
+  </dependencies>
+  <distributionManagement>
+  </distributionManagement>
+</project>
