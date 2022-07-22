@@ -11,7 +11,7 @@ import ij.ImageStack;
 import ij.plugin.AVI_Reader;
 import thresholding.LocalThresholding;
 /**
- * 
+ * Works with AVI movie
  * @author MMB
  */
 public class MotilityAnalysis{

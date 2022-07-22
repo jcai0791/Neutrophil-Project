@@ -44,6 +44,7 @@ import loci.plugins.in.ImporterOptions;
 
 /**
  * Computes and saves a measure for the clumping in an .nd2 file
+ * Works with nd2 files containing all conditions at a single timepoint
  */
 public class ClumpingAnalysis{
 	public static String example = "C:\\Users\\MMB\\Desktop\\Joseph Cai\\TestData\\Test";
@@ -67,6 +68,7 @@ public class ClumpingAnalysis{
 	
 	/**
 	 * Runs analysis on folder
+	 * Files must have format "NAME-123h.nd2"
 	 * @param srcFile folder containing all .nd2 files
 	 * @param destFile where data and images are saved
 	 * @throws IOException
